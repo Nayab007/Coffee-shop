@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+   
+ <head>
+
+    <style>
+        body{
+           background-image: url("coffee2.jpg");
+           height: 100vh;
+           background-size: cover;
+           background-position: center;
+           font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+         }
+         nav{
+         color:  rgb(245, 241, 239);
+         font-family: Arial, "times new roman";
+         font-size: 35px;
+         margin-left: 15%;
+
+      }
+         h1
+         {
+         color:rgb(14, 13, 13);
+         font-family: Arial, "times new roman";
+         font-size: 35px;
+         margin-left: 30%;
+         margin-top: 30px;
+
+      }
+      h2{
+         color: black;
+         font-family: Arial, "times new roman";
+         font-size: 30px;
+         background-color: yellowgreen;
+         width: 15%;
+         margin-left: 45%;
+         margin-top: 5%;
+         text-align: center;
+          
+  }
+
+  .coffee {
+          color: rgb(255, 255, 255);
+         font-family: Arial, "times new roman";
+         font-size: 20px;
+         width: 5%;
+         bottom: 5vh;
+         left: -8vh;
+         position: absolute;
+         text-align: left;
+    }
+
+  
+
+       ul a{
+         
+           color: #fff;
+           padding: 5px 20px;
+           border-radius: 40px;
+           border: 1px solid transparent;
+           transition: 0.6s ease;
+           text-align:right;
+        }
+         ul a:hover{
+           background-color:#77c222;
+           color: Black;
+        }
+
+        /* Slider */
+
+        .main{
+           width: 20%;
+           margin-left: 10%;
+            margin-top: 8vh;
+           position: relative;
+        }
+        .main1{
+           width: 20%;
+           margin-left: 10%;
+            margin-top: 12vh;
+           position: relative;
+        }
+    
+        .main2{
+           width: 20%;
+           margin-left: 10%;
+            margin-top: 14vh;
+           position: relative;
+        }
+    
+
+        #slider{
+           -webkit-appearance: none;
+           width: 100%;
+           height: 7px;
+           outline: none;
+           border-radius: 3px;
+           background-color: transparent;
+      }
+      #slider1{
+           -webkit-appearance: none;
+           width: 100%;
+           height: 7px;
+           outline: none;
+           border-radius: 3px;
+           background-color: transparent;
+      }
+      #slider2{
+           -webkit-appearance: none;
+           width: 100%;
+           height: 7px;
+           outline: none;
+           border-radius: 3px;
+           background-color: transparent;
+      }
+
+      #slider::-webkit-slider-thumb{
+         -webkit-appearance: none;
+         width: 48px;
+         height: 48px;
+         cursor: pointer;
+         z-index: 3;
+         position: relative;
+      }
+      #slider1::-webkit-slider-thumb{
+         -webkit-appearance: none;
+         width: 48px;
+         height: 48px;
+         cursor: pointer;
+         z-index: 3;
+         position: relative;
+      }
+      #slider2::-webkit-slider-thumb{
+         -webkit-appearance: none;
+         width: 48px;
+         height: 48px;
+         cursor: pointer;
+         z-index: 3;
+         position: relative;
+      }
+
+         #selector {
+            height: 104px;
+            width: 48px;
+            position: absolute;
+            
+            bottom: -20px;
+            left: 50%;
+            transform: translateX (-50%);
+            z-index: 2;
+         }
+
+         #selector1 {
+            height: 104px;
+            width: 48px;
+            position: absolute;
+            
+            bottom: -20px;
+            left: 50%;
+            transform: translateX (-50%);
+            z-index: 2;
+         }
+         #selector2 {
+            height: 104px;
+            width: 48px;
+            position: absolute;
+            
+            bottom: -20px;
+            left: 50%;
+            transform: translateX (-50%);
+            z-index: 2;
+         }
+
+         .SelectBtn {
+               height: 100px;
+               width: 100px;
+               background-image: url(coffeemug.png);
+               background-size: cover;
+               background-position: center;
+               border-radius: 50%;
+               position: absolute;
+               bottom: 0;
+               
+              
+            }
+
+            .SelectBtn1 {
+               height: 100px;
+               width: 100px;
+               background-image: url(coffeemug.png);
+               background-size: cover;
+               background-position: center;
+               border-radius: 50%;
+               position: absolute;
+               bottom: 0;
+               
+              
+            }
+            .SelectBtn2 {
+               height: 100px;
+               width: 100px;
+               background-image: url(coffeemug.png);
+               background-size: cover;
+               background-position: center;
+               border-radius: 50%;
+               position: absolute;
+               bottom: 0;
+               
+              
+            }
+
+            #SelectValue{
+              
+               width: 35px;
+               height: 30px;
+               position: absolute;
+               top: 0;
+               background-color: rgba(0, 0, 0, 0);
+               border-radius: 2px;
+               text-align: center;
+               line-height: 25px;
+               font-size: 18px;
+               color: #fff;
+               font-weight: bold;
+            }
+
+            #SelectValue1 {
+              
+              width: 35px;
+              height: 30px;
+              position: absolute;
+              top: 0;
+              background-color: rgba(0, 0, 0, 0);
+              border-radius: 2px;
+              text-align: center;
+              line-height: 25px;
+              font-size: 18px;
+              color: #fff;
+              font-weight: bold;
+           }
+            #SelectValue2 {
+              
+              width: 35px;
+              height: 30px;
+              position: absolute;
+              top: 0;
+              background-color: rgba(0, 0, 0, 0);
+              border-radius: 2px;
+              text-align: center;
+              line-height: 25px;
+              font-size: 18px;
+              color: #fff;
+              font-weight: bold;
+           }
+
+
+     
+
+      #ProgressBar{
+        width: 50%;
+        height: 7px;
+       cursor: pointer;
+        background: #b8dd8d;
+        border-radius: 3px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        }
+
+        #ProgressBar1 {
+        width: 50%;
+        height: 7px;
+       cursor: pointer;
+        background: #b8dd8d;
+        border-radius: 3px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        }
+
+        #ProgressBar2 {
+        width: 50%;
+        height: 7px;
+       cursor: pointer;
+        background: #b8dd8d;
+        border-radius: 3px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        }
+
+
+        /* slider bars ends */
+    </style>
+ <title>Product Page</title>
+     <link rel="stylesheet" href="style.css" />
+   
+    
+       
+   
+</head>
+
+   <body>
+    <nav class="nav">
+          <ul class="navbuttons">
+             <a href="index.html">Home</a>
+         </ul>
+    </nav>
+      <h1>Product Page</h1>
+     
+      <h2>
+          <span id="result" ></span>
+      </h2>
+
+      
+      <div class="main">
+         <h3 class="coffee">Coffee</h3>
+          <input type="range" min="0" max="100" value="50" color=" transparent" id="slider">
+         <div id="selector">
+         <div class="SelectBtn"></div>
+            <div id="SelectValue"></div>
+         </div>
+         <div id="ProgressBar"></div>
+      </div>
+      <div class="main1">
+         <h3 class="coffee">Cordyceps powder</h3>
+          <input type="range" min="0" max="100" value="50" color=" transparent" id="slider1">
+         <div id="selector1">
+         <div class="SelectBtn1"></div>
+            <div id="SelectValue1"></div>
+         </div>
+         <div id="ProgressBar1"></div>
+      </div>
+      <div class="main2">
+         <h3 class="coffee">Chaga</h3>
+          <input type="range" min="0" max="100" value="50" color=" transparent" id="slider2">
+         <div id="selector2">
+         <div class="SelectBtn2"></div>
+            <div id="SelectValue2"></div>
+         </div>
+         <div id="ProgressBar2"></div>
+      </div>
+      <script>
+
+        document.getElementById("result").innerHTML=localStorage.getItem("textvalue");
+         
+         
+         var slider = document.getElementById("slider");
+         var slider1 = document.getElementById("slider1");
+         var slider2 = document.getElementById("slider2");
+         var selector = document.getElementById("selector");
+         var selector1 = document.getElementById("selector1");
+         var selector2 = document.getElementById("selector2");
+         var SelectValue = document.getElementById("SelectValue");
+         var SelectValue1 = document.getElementById("SelectValue1");
+         var SelectValue2 = document.getElementById("SelectValue2");
+         var ProgressBar = document.getElementById("ProgressBar");
+         var ProgressBar1 = document.getElementById("ProgressBar1");
+         var ProgressBar2 = document.getElementById("ProgressBar2");
+
+         SelectValue.innerHTML = slider.value;
+          slider.oninput = function() {
+          SelectValue.innerHTML = this.value + "%";
+          selector.style.left = this.value + "%";
+         ProgressBar.style.width = this.value + "%";
+          }
+
+         SelectValue1.innerHTML = slider1.value;
+          slider1.oninput = function() {
+          SelectValue1.innerHTML = this.value + "%";
+          selector1.style.left = this.value + "%";
+         ProgressBar1.style.width = this.value + "%";
+         }
+
+         SelectValue2.innerHTML = slider2.value;
+          slider2.oninput = function() {
+          SelectValue2.innerHTML = this.value + "%";
+          selector2.style.left = this.value + "%";
+         ProgressBar2.style.width = this.value + "%";
+         }
+      </script>
+    </body>
+</html> 

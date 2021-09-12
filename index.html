@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coffee site</title>
+    <Link rel="stylesheet" href="style.css">
+     <Link rel="stylesheet" href = "https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css">
+     
+<body>
+    <header>
+        <a href="#" class="brand">Forest</a>
+        <div class="menu-btn"></div>
+        <div class="navigation">
+            <div class="navigation-items">
+                <a href="#">Home</a>
+                <a href="#">About</a>
+                <a href="#">Contact</a>
+            </div>
+        </div>
+    </header>
+    <section class="home">
+        <video class="video-slide active" src="1.mp4" autoplay muted loop></video>
+        
+       
+       
+        <div class="content active">
+            <h1>Beautiful.<br><span>Forest</span></h1>
+           
+          
+
+            <form class="login">
+                <h3 class="name">Enter your Name</h3>
+                <input class="input" type="text" color="#fff" id="name" name="name" placeholder="Enter name..."> 
+                <a class="btn"  href="return.html" onclick="passvalue()">Enter</a>
+              </form>
+           </div>
+          
+        
+     
+        <div class="media-icons">
+                <a href="#"><i class="fab fa-facebook-f"></i></a>
+                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="#"><i class="fab fa-linkedin-in"></i></a>
+            </div>
+         
+ 
+</div>
+</section>
+
+   <script>
+           function passvalue() {
+               var firstname = document.getElementById("name").value;
+               localStorage.setItem("textvalue", firstname);
+               return "return.html";
+           }
+       </script>
+
+
+</body>
+</html>
