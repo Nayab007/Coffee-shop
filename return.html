@@ -44,8 +44,7 @@
          margin-left: 44%;
          margin-top: 35vh;
          text-align: center;
-          
-  }
+         }
 
   .coffee {
           color: rgb(255, 255, 255);
@@ -320,7 +319,7 @@
    <body>
     <nav class="nav">
           <ul class="navbuttons">
-             <a href="index.html">Home</a>
+             <a href="index.html">ZENERGY</a>
              <a href="about us">About</a>
              <a href="contact">Contact</a>
              <h1>Product Page</h1>
@@ -336,7 +335,7 @@
    <div class="coffeemug1">
       <img src="coffeemug12.png" alt="coffeemug" >
     </div>
-      <div class="main">
+      <!-- <div class="main">
          <h3 class="coffee">Coffee</h3>
           <input type="range" min="0" max="100" value="50" color=" transparent" id="slider">
          <div id="selector">
@@ -362,45 +361,62 @@
             <div id="SelectValue2"></div>
          </div>
          <div id="ProgressBar2"></div>
-      </div>
+      </div> -->
       <script>
 
-        document.getElementById("result").innerHTML=localStorage.getItem("textvalue");
+        
          
          
-         var slider = document.getElementById("slider");
-         var slider1 = document.getElementById("slider1");
-         var slider2 = document.getElementById("slider2");
-         var selector = document.getElementById("selector");
-         var selector1 = document.getElementById("selector1");
-         var selector2 = document.getElementById("selector2");
-         var SelectValue = document.getElementById("SelectValue");
-         var SelectValue1 = document.getElementById("SelectValue1");
-         var SelectValue2 = document.getElementById("SelectValue2");
-         var ProgressBar = document.getElementById("ProgressBar");
-         var ProgressBar1 = document.getElementById("ProgressBar1");
-         var ProgressBar2 = document.getElementById("ProgressBar2");
+      //    var slider = document.getElementById("slider");
+      //    var slider1 = document.getElementById("slider1");
+      //    var slider2 = document.getElementById("slider2");
+      //    var selector = document.getElementById("selector");
+      //    var selector1 = document.getElementById("selector1");
+      //    var selector2 = document.getElementById("selector2");
+      //    var SelectValue = document.getElementById("SelectValue");
+      //    var SelectValue1 = document.getElementById("SelectValue1");
+      //    var SelectValue2 = document.getElementById("SelectValue2");
+      //    var ProgressBar = document.getElementById("ProgressBar");
+      //    var ProgressBar1 = document.getElementById("ProgressBar1");
+      //    var ProgressBar2 = document.getElementById("ProgressBar2");
 
-         SelectValue.innerHTML = slider.value;
-          slider.oninput = function() {
-          SelectValue.innerHTML = this.value + "%";
-          selector.style.left = this.value + "%";
-         ProgressBar.style.width = this.value + "%";
-          }
+      //    SelectValue.innerHTML = slider.value;
+      //     slider.oninput = function() {
+      //     SelectValue.innerHTML = this.value + "%";
+      //     selector.style.left = this.value + "%";
+      //    ProgressBar.style.width = this.value + "%";
+      //     }
 
-         SelectValue1.innerHTML = slider1.value;
-          slider1.oninput = function() {
-          SelectValue1.innerHTML = this.value + "%";
-          selector1.style.left = this.value + "%";
-         ProgressBar1.style.width = this.value + "%";
+      //    SelectValue1.innerHTML = slider1.value;
+      //     slider1.oninput = function() {
+      //     SelectValue1.innerHTML = this.value + "%";
+      //     selector1.style.left = this.value + "%";
+      //    ProgressBar1.style.width = this.value + "%";
+      //    }
+
+      //    SelectValue2.innerHTML = slider2.value;
+      //     slider2.oninput = function() {
+      //     SelectValue2.innerHTML = this.value + "%";
+      //     selector2.style.left = this.value + "%";
+      //    ProgressBar2.style.width = this.value + "%";
+      //    }
+
+         
+         
+         
+
+            var i=0;
+              text = document.getElementById("result").innerHTML=localStorage.getItem("textvalue");
+         function typing() {
+               if (i<text.length){
+                 
+                  document.getElementById("result").innerHTML += text.charAt(i);
+                  i++;
+                  setTimeout(typing,400);
+               }
          }
-
-         SelectValue2.innerHTML = slider2.value;
-          slider2.oninput = function() {
-          SelectValue2.innerHTML = this.value + "%";
-          selector2.style.left = this.value + "%";
-         ProgressBar2.style.width = this.value + "%";
-         }
+         typing();
+         
       </script>
     </body>
 </html> 
