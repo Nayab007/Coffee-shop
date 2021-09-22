@@ -1,10 +1,14 @@
-@import url('https://fonts.googleapis.com/css2?family=Hina+Mincho&display=swap');
-
+@font-face {
+  font-family: 'Glamore Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Glamore Regular'), url('Glamore-lgE7w.woff') format('woff');
+}
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Hina Mincho', serif;
+  font-family: 'Glamore Regular', sans-serif;
 }
 
 header {
@@ -109,28 +113,27 @@ section {
 }
 
 .home .content a {
-  background: #fff;
+ 
   padding: 15px 35px;
-  color: black;
-  font-size: 1.1em;
   font-weight: 500;
   text-decoration: none;
-  border-radius: 2px;
+ 
 }
 
 .login {
   position: absolute;
-  top: 60%;
-  left: 45%;
+  top: 40%;
+  left: 40%;
+
   letter-spacing: 1px;
 }
 
 .input {
   color: #fff;
-  font-size: large;
+  font-size: medium;
   width: 200px;
   margin-top: 10px;
-  margin-left: 10%;
+  margin-left: 28px;
   background: transparent;
   outline: none;
   padding: 10px;
@@ -141,25 +144,31 @@ section {
 }
 
 .name {
-  margin-left: 22%;
+  margin-left: 26px;
   margin-top: 30px;
 }
 
 .btn {
   position: absolute;
-  text-align: center;
-  width: 100px;
-  bottom: -10vh;
-  left: 35%;
-  color: #222;
+  text-align: center; 
+  width: 110px;
+  bottom: -8vh;
+  left: 70px;
+  color: #fff;
   background-color: transparent;
   outline: none;
-  padding: 20px;
-  font-size: 2px;
+  font-size: 12px;
+  padding: 10px;
   border-radius: 30px;
-  box-shadow: 0 0 8px transparent;
+  box-shadow: 0 0 8px #fff;
   transition: box-shadow 0.5s ease;
 }
+   .btn:hover{
+    background-color: #B1D182;
+    color: #000000;
+ }
+
+
 
 .home .media-icons {
   z-index: 888;
@@ -249,6 +258,7 @@ section {
 
   .home .media-icons {
     right: 15px;
+   
   }
   header .navigation {
     display: none;
@@ -326,7 +336,7 @@ section {
     outline: none;
     padding: 10px;
     font-size: 22px;
-    border-radius: 30px;
+    
     box-shadow: 0 0 8px #fff;
     transition: box-shadow 0.5s ease;
   }
@@ -339,12 +349,24 @@ section {
   }
   .btn {
     font-size: 16px;
-    padding: 15px 20px;
     margin-left: -19%;
     margin-bottom: -22%;
     background: transparent;
+    border: 25px;
+    padding: 10px;
     border-radius: 30px;
     box-shadow: 0 0 8px #f5f5f5;
     cursor: pointer;
   }
 }
+
+
+@media only screen and (min-width: 250px) {}
+@media only screen and (min-width: 550px) {}
+
+@media only screen and (min-width: 650px) {}
+
+@media only screen and (min-width: 800px) {}
+@media only screen and (min-width: 1000px) {}
+@media only screen and (min-width: 1200px) {}
+
