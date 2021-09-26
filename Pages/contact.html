@@ -4,8 +4,93 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact</title>
+    <style>
+        @font-face {
+    font-family: 'Glamore Regular';
+      font-style: normal;
+      font-weight: normal;
+         src: local('Glamore Regular'), url('../images/Glamore-lgE7w.woff') format('woff');
+   }
+
+  body{
+     background-image: url("../images/moss\ background.jpg");
+     height: 100vh;
+     background-size: cover;
+     background-position: center;
+     font-family: 'Glamore Regular', sans-serif;
+   }
+
+   
+   header .brand {
+       position: relative;
+       top: 6vh;
+       margin-left: 16vw;
+  color: #fff;
+  font-size: 1.5em;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+}
+   header .navigation {
+  position: relative;
+   }
+header .navigation .navigation-items a {
+  position: relative;
+  color: #fff;
+  font-size: 1em;
+  font-weight: 500;
+  text-decoration: none;
+  margin-left: 40vw;
+  transition: 0.3s ease;
+}
+
+header .navigation .navigation-items a:before {
+  content: '';
+  position: absolute;
+  background: #fff;
+  width: 0;
+  height: 3px;
+  bottom: 0;
+  left: 0;
+  transition: 0.3s ease;
+}
+header .navigation .navigation-items a:hover:before {
+  width: 100%;
+}
+
+
+
+p{
+   position: absolute;
+   color: #ffffff;
+   font-size: 24px;
+   width: 40vw;
+   margin-left: 30vw;
+   margin-top: 15vh;
+   text-align: center;
+   }
+    </style>
 </head>
+<div class="navigation-items">
+   
+    
+</div>
 <body>
-        <h2>This is Contact page</h2>
+    <header>
+        <a href="../index.html" class="brand">ZENERGY</a>
+        <div class="menu-btn"></div>
+        <div class="navigation">
+            <div class="navigation-items">
+                
+                <a href="./about.html">About Us</a>
+                <a href="./contact.html">Contact</a>
+                
+            </div>
+        </div>
+    </header>
+    <h2 style="margin-top: 8vh; margin-left: 40vw; color:#ffffff; ">Contact Page</h2>
+        <p> Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Quia aspernatur explicabo, illum iure voluptatibus itaque dignissimos blanditiis? Fuga quos, labore explicabo nulla in facilis neque molestiae debitis blanditiis ex voluptatum. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsa,
+             dolorem dignissimos <br/> recusandae fuga expedita dolores, necessitatibus obcaecati qui itaque iure distinctio sint enim, temporibus debitis nihil doloribus rem ipsum eaque!</p>
 </body>
 </html>
