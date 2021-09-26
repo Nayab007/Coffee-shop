@@ -2,7 +2,7 @@
   font-family: 'Glamore Regular';
   font-style: normal;
   font-weight: normal;
-  src: local('Glamore Regular'), url('Glamore-lgE7w.woff') format('woff');
+  src: local('Glamore Regular'), url("./images/Glamore-lgE7w.woff") format('woff');
 }
 * {
   margin: 0;
@@ -132,7 +132,7 @@ section {
   color: #fff;
   font-size: medium;
   width: 200px;
-  margin-top: 10px;
+  margin-top: 12vh;
   margin-left: 28px;
   background: transparent;
   outline: none;
@@ -143,9 +143,10 @@ section {
   transition: box-shadow 0.5s ease;
 }
 
-.name {
-  margin-left: 26px;
-  margin-top: 30px;
+ .name {
+   
+  margin-left: 27vw;
+  margin-top: -4vh;
 }
 
 .btn {

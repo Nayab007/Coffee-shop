@@ -1,4 +1,4 @@
 # Coffee-shop
 
 
-Coffee store website for a freind start up business.
+Coffee store website for a friend start up business.
