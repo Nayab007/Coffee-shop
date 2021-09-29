@@ -133,7 +133,7 @@ section {
   font-size: medium;
   width: 200px;
   margin-top: 12vh;
-  margin-left: 28px;
+  margin-left: 26px;
   background: transparent;
   outline: none;
   padding: 10px;
@@ -145,7 +145,7 @@ section {
 
  .name {
    
-  margin-left: 27vw;
+  margin-left: 23vw;
   margin-top: -4vh;
 }
 
@@ -153,13 +153,13 @@ section {
   position: absolute;
   text-align: center; 
   width: 110px;
-  bottom: -8vh;
+  bottom: -10vh;
   left: 70px;
   color: #fff;
   background-color: transparent;
   outline: none;
   font-size: 12px;
-  padding: 10px;
+  padding: 18px;
   border-radius: 30px;
   box-shadow: 0 0 8px #fff;
   transition: box-shadow 0.5s ease;
@@ -364,17 +364,46 @@ section {
 
 @media only screen and (min-width: 250px) {
 
-  .name {
-    display: flex;
-}
+ 
 .name {
   position: relative;
-  top: -2vh;
-  width: 60vw;
-  margin-left: 18vw;
+  top: -4vh;
+  width: 66vw;
+  font-weight: 900;
+  margin-left: 10vw;
  text-align: center;
 }
+.input {
+  position: absolute;
+  color: #fff;
+  font-size: large;
+  width: 200px;
+  margin-top: -2vh;
+  margin-left: -10px;
+  background: transparent;
+  outline: none;
+  padding: 10px;
+  font-size: 22px;
+  
+  box-shadow: 0 0 8px #fff;
+  transition: box-shadow 0.5s ease;
 }
+
+.btn {
+  font-size: 16px;
+  margin-left: -22%;
+  margin-bottom: -12%;
+  background: transparent;
+  border: 25px;
+  padding: 10px;
+ 
+  border-radius: 30px;
+  box-shadow: 0 0 8px #f5f5f5;
+  text-align: center;
+  cursor: pointer;
+}
+}
+
 @media only screen and (min-width: 550px) {
   .home .content h1{
     font-size: 3em;
@@ -429,11 +458,41 @@ section {
 }
 .name {
   position: relative;
-  top: -2vh;
-  width: 28vw;
-  margin-left: 28vw;
+  top: -10vh;
+  width: 32vw;
+  margin-left: 18vw;
 
  text-align: center;
+}
+.input {
+  position: absolute;
+  color: #fff;
+  font-size: large;
+  width: 200px;
+  margin-top: 4vh;
+  margin-left: 0vw;
+  background: transparent;
+  outline: none;
+  padding: 10px;
+  font-size: 22px;
+  
+  box-shadow: 0 0 8px #fff;
+  transition: box-shadow 0.5s ease;
+}
+
+.btn {
+  
+  font-size: 16px;
+   left: 3vw;
+  margin-bottom: -10vh;
+  background: transparent;
+  border: 25px;
+  padding: 10px;
+ 
+  border-radius: 30px;
+  box-shadow: 0 0 8px #f5f5f5;
+  text-align: center;
+  cursor: pointer;
 }
 }
 
