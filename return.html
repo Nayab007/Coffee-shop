@@ -6,24 +6,29 @@
  <head>
 
    <Link rel="stylesheet" href="product/product.css">
-    
+      <script defer src="./product/script.js"></script>
        
    
 </head>
 
-  
-    <nav class="nav">
-          <ul class="navbuttons">
-             <a href="index.html">ZENERGY</a>
-             <a href="return.html">Product Page</a> 
-         </ul>
-        
-    </nav>
-     
+
+<header>
+   <a href="./index.html" class="brand">ZENERGY</a>
+   <div class="menu-btn"></div>
+   <div class="navigation">
+       <div class="navigation-items">
+           <a href="#">Product</a>
+           <a href="./Pages/about.html">About Us</a>
+           <a href="./Pages/contact.html">Contact</a>
+           
+       </div>
+   </div>
+</header>
      
       <div class="h2">
          <span id="result" ></span>
      </div>
+
      <div class="Lion_smane">
       <h3 style= "color:#ffffff"> Lion mane</h3>
      <img src="images/Lion_smane.png" alt="mushroom" width="120" height="100">
@@ -38,12 +43,18 @@
       <div> <h3>Cordyceps</h3>often used by athletes to improve stamina, endurance, and and overall performance by its promotion of blood flow. Also has anti-inflammatory and even libido-boosting properties.</div>
     </div>
    </div>
+   <div class="bg-modal">
+      
+   </div>
+    
      <div class="Chaga"><h3 style= "color:#ffffff"> Chaga</h3>
-     <img src="images/Chaga.png" alt="mushroom" width="120" height="110" >
+    
+      <img src="images/Chaga.png" alt="coffeebean" width="120" height="110">
      <div class="overlay">
       <div><h3>Chaga</h3>-helps with your body’s detoxification process and strengthens your immune system. Has been used for centuries in traditional medicine for overall wellbeing including lowering blood pressure, cholesterol, and anti ageing properties.</div>
     </div>
    </div>
+</input>
      <div class="coffee">
         <h3 style= "color:#ffffff"> Coffee</h3>
      <img src="images/coffee.png" alt="coffeebean" width="120" height="110">
@@ -55,90 +66,23 @@
       <img src="./images/coffeemug12.png" alt="coffeemug" >
       
     </div>
-    
-      <!-- <div class="main">
-         <h3 class="coffee">Coffee</h3>
-          <input type="range" min="0" max="100" value="50" color=" transparent" id="slider">
-         <div id="selector">
-         <div class="SelectBtn"></div>
-            <div id="SelectValue"></div>
-         </div>
-         <div id="ProgressBar"></div>
-      </div>  </br>
-      <div class="main1">
-         <h3 class="coffee">Cordyceps powder</h3>
-          <input type="range" min="0" max="100" value="50" color=" transparent" id="slider1">
-         <div id="selector1">
-         <div class="SelectBtn1"></div>
-            <div id="SelectValue1"></div>
-         </div>
-         <div id="ProgressBar1"></div>
-      </div>
-      <div class="main2">
-         <h3 class="coffee">Chaga</h3>
-          <input type="range" min="0" max="100" value="50" color=" transparent" id="slider2">
-         <div id="selector2">
-         <div class="SelectBtn2"></div>
-            <div id="SelectValue2"></div>
-         </div>
-         <div id="ProgressBar2"></div>
-      </div> -->
-      <script>
-
-        
-         
-         
-      //    var slider = document.getElementById("slider");
-      //    var slider1 = document.getElementById("slider1");
-      //    var slider2 = document.getElementById("slider2");
-      //    var selector = document.getElementById("selector");
-      //    var selector1 = document.getElementById("selector1");
-      //    var selector2 = document.getElementById("selector2");
-      //    var SelectValue = document.getElementById("SelectValue");
-      //    var SelectValue1 = document.getElementById("SelectValue1");
-      //    var SelectValue2 = document.getElementById("SelectValue2");
-      //    var ProgressBar = document.getElementById("ProgressBar");
-      //    var ProgressBar1 = document.getElementById("ProgressBar1");
-      //    var ProgressBar2 = document.getElementById("ProgressBar2");
-
-      //    SelectValue.innerHTML = slider.value;
-      //     slider.oninput = function() {
-      //     SelectValue.innerHTML = this.value + "%";
-      //     selector.style.left = this.value + "%";
-      //    ProgressBar.style.width = this.value + "%";
-      //     }
-
-      //    SelectValue1.innerHTML = slider1.value;
-      //     slider1.oninput = function() {
-      //     SelectValue1.innerHTML = this.value + "%";
-      //     selector1.style.left = this.value + "%";
-      //    ProgressBar1.style.width = this.value + "%";
-      //    }
-
-      //    SelectValue2.innerHTML = slider2.value;
-      //     slider2.oninput = function() {
-      //     SelectValue2.innerHTML = this.value + "%";
-      //     selector2.style.left = this.value + "%";
-      //    ProgressBar2.style.width = this.value + "%";
-      //    }
-
-      
-         
-         
-         
-
-            var i=0;
-              text = document.getElementById("result").innerHTML=localStorage.getItem("textvalue");
-         function typing() {
-               if (i<text.length){
-                 
-                  document.getElementById("result").innerHTML += text.charAt(i);
-                  i++;
-                  setTimeout(typing,400);
-               }
+    <script>
+      var i=0;
+        text = document.getElementById("result").innerHTML=localStorage.getItem("textvalue");
+    function typing() {
+         if (i<text.length){
+           
+           document.getElementById("result").innerHTML += text.charAt(i);
+            i++;
+            setTimeout(typing,400);
          }
-         typing();
-         
-      </script>
+    }
+    typing();
+    
+    
+    
+    </script>
+  
+    
     </body>
 </html> 

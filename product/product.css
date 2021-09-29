@@ -16,12 +16,60 @@
    }
 
 
-   .nav a{
-    display: inline-block;
-   color:  #ffffff;
-   margin-left: 12%;
-}
-
+   header {
+      z-index: 999;
+      position: absolute;
+      top: 0;
+      right: 10%;
+      width: 100vw;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 200px;
+      transition: 0.5s ease;
+    }
+    
+    header .brand {
+      color: #fff;
+      margin-top: 3vh;
+      margin-left: 30vw;
+      font-size: 1.5em;
+      font-weight: 700;
+      text-transform: uppercase;
+      text-decoration: none;
+    }
+    
+    header .navigation {
+      position: relative;
+     
+    }
+    
+    header .navigation .navigation-items a {
+      position: relative;
+     
+      color: #ffffff;
+      font-size: 1em;
+      font-weight: 500;
+      text-decoration: none;
+      margin: 2vw;
+     
+      transition: 0.3s ease;
+    }
+    
+    header .navigation .navigation-items a:before {
+      content: '';
+      position: absolute;
+      background: #fff;
+      width: 0;
+      height: 3px;
+      bottom: 0;
+      left: 0;
+      transition: 0.3s ease;
+    }
+    
+    header .navigation .navigation-items a:hover:before {
+      width: 100%;
+    }
 
 
 
@@ -89,29 +137,9 @@
   .cordycepsmilitaris{
    position: relative;
     margin-top: 18vh;
-    margin-left: 27vw;
+    margin-left: 25vw;
 }
-.overlay {
-   position: absolute;
-   top: 0;
-   bottom: 0;
-   left: 0;
-   font-size: 10px;
-   text-align: center;
-   
-   line-height: 1.6;
-   right: 20vw;
-   height: 20vh;
-   width: 10vw;
-   opacity: 0;
-   border-radius: 20%;
-   transition: .5s ease;
-   padding: inherit;
-   background-color: #ffffff;
- }
- .cordycepsmilitaris:hover .overlay {
-   opacity: 1;
- }
+
   .Chaga{
    position: relative;
     margin-top: -45vh;
@@ -128,16 +156,16 @@
    line-height: 1.6;
    right: 20vw;
    height: 20vh;
-   width: 10vw;
+   width: 5vw;
    opacity: 0;
    border-radius: 25%;
    transition: .5s ease;
    padding: inherit;
    background-color: #ffffff;
  }
- .Chaga:hover .overlay {
+  .Chaga:hover .overlay {
    opacity: 1;
- }
+ } 
 
 
   .coffee{
@@ -166,6 +194,8 @@
  .coffee:hover .overlay {
    opacity: 1;
  }
+
+
 
   /* Slider */
 

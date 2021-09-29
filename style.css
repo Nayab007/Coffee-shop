@@ -302,7 +302,7 @@ section {
   }
 
   .menu-btn {
-    background: url(icon.png) no-repeat;
+    background: url(./images/menu.png) no-repeat;
     background-size: 30px;
     background-position: center;
     width: 40px;
@@ -313,7 +313,7 @@ section {
 
   .menu-btn.active {
     z-index: 999;
-    background: url(cancel.png) no-repeat;
+    background: url(./images/close.png) no-repeat;
     background-size: 25px;
     background-position: center;
     transition: 0.3s ease;
@@ -344,7 +344,7 @@ section {
 
   .name {
     position: absolute;
-    left: -6vw;
+    margin-left: 16vw;
     font-size: 16px;
     top: -3vh;
   }
@@ -362,12 +362,78 @@ section {
 }
 
 
-@media only screen and (min-width: 250px) {}
-@media only screen and (min-width: 550px) {}
+@media only screen and (min-width: 250px) {
 
+  .name {
+    display: flex;
+}
+.name {
+  position: relative;
+  top: -2vh;
+  width: 60vw;
+  margin-left: 18vw;
+ text-align: center;
+}
+}
+@media only screen and (min-width: 550px) {
+  .home .content h1{
+    font-size: 3em;
+    line-height: 20px;
+}
+.name {
+  position: relative;
+  top: -2vh;
+  width: 60vw;
+  margin-left: 22vw;
+ 
+ text-align: center;
+}
+}
 @media only screen and (min-width: 650px) {}
 
 @media only screen and (min-width: 800px) {}
-@media only screen and (min-width: 1000px) {}
-@media only screen and (min-width: 1200px) {}
+@media only screen and (min-width: 1000px) {
+
+  .home .content h1{
+    font-size: 3em;
+    line-height: 20px;
+}
+.name {
+  position: relative;
+  top: -2vh;
+  width: 37vw;
+  margin-left: 18vw;
+ 
+ text-align: center;
+}
+
+}
+@media only screen and (min-width: 1100px) {
+  .home .content h1{
+    font-size: 3em;
+    line-height: 20px;
+}
+.name {
+  position: relative;
+  top: -2vh;
+  width: 35vw;
+  margin-left: 18vw;
+ 
+ text-align: center;
+}
+}
+@media only screen and (min-width: 1200px) {
+  .home .content h1{
+    font-size: 3em;
+    line-height: 20px;
+}
+.name {
+  position: relative;
+  top: -2vh;
+  width: 28vw;
+  margin-left: 28vw;
+
+ text-align: center;
+}
+}
 
