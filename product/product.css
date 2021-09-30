@@ -1,104 +1,176 @@
-
-
 @font-face {
-    font-family: 'Glamore Regular';
-      font-style: normal;
-      font-weight: normal;
-         src: local('Glamore Regular'), url('../images/Glamore-lgE7w.woff') format('woff');
-   }
-
-  body{
-     background-image: url("../images/moss\ background.jpg");
-     height: 100vh;
-     background-size: cover;
-     background-position: center;
-     font-family: 'Glamore Regular', sans-serif;
-   }
-
-
-   header {
-      z-index: 999;
-      position: absolute;
-      top: 0;
-      right: 10%;
-      width: 100vw;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 15px 200px;
-      transition: 0.5s ease;
-    }
-    
-    header .brand {
-      color: #fff;
-      margin-top: 3vh;
-      margin-left: 30vw;
-      font-size: 1.5em;
-      font-weight: 700;
-      text-transform: uppercase;
-      text-decoration: none;
-    }
-    
-    header .navigation {
-      position: relative;
-     
-    }
-    
-    header .navigation .navigation-items a {
-      position: relative;
-     
-      color: #ffffff;
-      font-size: 1em;
-      font-weight: 500;
-      text-decoration: none;
-      margin: 2vw;
-     
-      transition: 0.3s ease;
-    }
-    
-    header .navigation .navigation-items a:before {
-      content: '';
-      position: absolute;
-      background: #fff;
-      width: 0;
-      height: 3px;
-      bottom: 0;
-      left: 0;
-      transition: 0.3s ease;
-    }
-    
-    header .navigation .navigation-items a:hover:before {
-      width: 100%;
-    }
-
-
-
-.h2{
-   position: absolute;
-   color: #000000;
-   font-size: 24px;
-  
-   width: 10%;
-   margin-left: 42%;
-   margin-top: 41vh;
-   text-align: center;
-   }
-
-
-.coffeemug1 {
-     
-
-    background-position: center;
-    margin-top: 10vh;
-    margin-left: 36%;
-   
-
+  font-family: 'Glamore Regular';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Glamore Regular'),
+    url('../images/Glamore-lgE7w.woff') format('woff');
 }
 
+body {
+  background-image: url('../images/moss\ background.jpg');
+  height: 100vh;
+  background-size: cover;
+  background-position: center;
+  font-family: 'Glamore Regular', sans-serif;
+}
 
+header {
+  z-index: 999;
+  position: absolute;
+  top: 0;
+  right: 10%;
+  width: 100vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 200px;
+  transition: 0.5s ease;
+}
 
+header .brand {
+  color: #fff;
+  margin-top: 3vh;
+  margin-left: 30vw;
+  font-size: 1.5em;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+}
 
-  
+header .navigation {
+  position: relative;
+}
 
+header .navigation .navigation-items a {
+  position: relative;
 
+  color: #ffffff;
+  font-size: 1em;
+  font-weight: 500;
+  text-decoration: none;
+  margin: 2vw;
+
+  transition: 0.3s ease;
+}
+
+header .navigation .navigation-items a:before {
+  content: '';
+  position: absolute;
+  background: #fff;
+  width: 0;
+  height: 3px;
+  bottom: 0;
+  left: 0;
+  transition: 0.3s ease;
+}
+
+header .navigation .navigation-items a:hover:before {
+  width: 100%;
+}
+
+.h2 {
+  position: absolute;
+  color: #000000;
+  font-size: 20px;
+
+  width: 10%;
+  margin-left: 40%;
+  margin-top: 32vh;
+  text-align: center;
+}
+
+.coffeemug1 {
+  background-position: center;
+  margin-top: 18vh;
+  margin-left: 38%;
+}
+
+.onClickTextOverImage {
+ 
+  width: 70px;
+  height: 125px;
+  top: -80vh;
+  left: 17vw;
+  background-size: cover;
+  display: inline-block;
+  border-radius: 16px;
+  margin: 4px;
+
+  cursor: pointer;
+  position: relative;
+}
+
+.onClickTextOverImage div {
+  position: absolute;
+  width: 10vw;
+  height: 15vh;
+  color: #fff;
+  padding: 20px;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 1;
+
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 16px;
+  margin-top: 5%;
+  text-align: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.9s;
+}
+
+.onClickTextOverImage.show div {
+  opacity: 1;
+  padding-top: 1vh;
+  visibility: visible;
+  font-size: 0.6rem;
+}
+
+.loader
+{
+  position: relative;
+  width: 110px;
+  height: 110px;
+  top: -63vh;
+  margin-left: 16vw;
+  border-radius: 50%;
+  background: linear-gradient(45deg,transparent, transparent 30%, #e8e9ee);
+  animation: animate 2s linear infinite;
+}
+ @keyframes animate {
+  0% {
+    transform: rotate(0deg);
+    filter: hue-rotate(0deg)
+  }
+  100%
+  {
+    transform: rotate(360deg);
+    filter: hue-rotate(360deg);
+  }
+}
+.loader:before {
+  content: "";
+  position: absolute;
+  top: 6px;
+  left: 6px;
+  right: 6px;
+  bottom: 6px;
+  background: transparent;
+  border-radius: 50%;
+  z-index: 1000;
+}
+.loader:after {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  background: linear-gradient(45deg,transparent, transparent 30%, #e8e9ee);
+  border-radius: 50%;
+  z-index: 1000;
+  z-index: 1;
+  filter: blur(30px);
+}
 

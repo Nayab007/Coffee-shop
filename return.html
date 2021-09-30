@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-
+  
 
    <body>
  <head>
@@ -28,7 +28,6 @@
       <div class="h2">
          <span id="result" ></span>
      </div>
-
     
     
     
@@ -37,10 +36,44 @@
     
    </div>
    <div class="coffeemug1">
-      <img src="./images/coffeemug12.png" alt="coffeemug"  >
-      
-    </div>
+      <img src="./images/coffeemug12.png" alt="coffeemug" layout="responsive" width="225px" height="500px" >
+      </div>  
+      <div class="loader"></div>
+        <div class="onClickTextOverImage"
+        style="background-image:url(./images/cordycepsmilitaris.png)">
+     
+     <div><h3>Cordyceps</h3> often used by athletes to improve stamina, endurance, and and overall performance by its promotion of blood flow. Also has anti-inflammatory and even libido-boosting properties. <a target="_blank"  onclick="stopPropagation(event)"></a></div>
+   </div>
+        </div>
+        
+      </div>
+
+
+
     <script>
+
+var textOverImages = document.getElementsByClassName("onClickTextOverImage");
+var previousTextOverImage;
+for (var i = 0; i < textOverImages.length; i++) {
+  textOverImages[i].onclick = function() {
+    var classes = this.classList;
+    if (classes.contains("show")) {
+      classes.remove("show");
+    } else {
+      if (previousTextOverImage != null)
+        previousTextOverImage.classList.remove("show");
+      previousTextOverImage = this;
+      classes.add("show");
+    }
+  }
+}
+
+function stopPropagation(event){
+  event.stopPropagation();
+}
+
+
+
       var i=0;
         text = document.getElementById("result").innerHTML=localStorage.getItem("textvalue");
     function typing() {
@@ -54,7 +87,7 @@
     typing();
     
     document.getElementById("demo").innerHTML = hello;
-    
+
     </script>
   
     
