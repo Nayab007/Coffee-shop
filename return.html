@@ -36,13 +36,34 @@
     
    </div>
    <div class="coffeemug1">
-      <img src="./images/coffeemug12.png" alt="coffeemug" layout="responsive" width="225px" height="500px" >
+      <img src="./images/coffeemug12.png" alt="coffeemug"  layout="responsive" width="225px" height="500px" >
       </div>  
       <div class="loader"></div>
         <div class="onClickTextOverImage"
         style="background-image:url(./images/cordycepsmilitaris.png)">
      
      <div><h3>Cordyceps</h3> often used by athletes to improve stamina, endurance, and and overall performance by its promotion of blood flow. Also has anti-inflammatory and even libido-boosting properties. <a target="_blank"  onclick="stopPropagation(event)"></a></div>
+   </div>
+        </div>
+      <div class="loader1"></div>
+        <div class="onClickTextOverImage1"
+        style="background-image:url(./images/Chaga.png)">
+     
+     <div><h3>Chaga</h3> helps with your body’s detoxification process and strengthens your immune system. Has been used for centuries in traditional medicine for overall wellbeing including lowering blood pressure, cholesterol, and anti ageing properties. <a target="_blank"  onclick="stopPropagation(event)"></a></div>
+   </div>
+        </div>
+      <div class="loader2"></div>
+        <div class="onClickTextOverImage2"
+        style="background-image:url(./images/Lion_smane.png)">
+     
+     <div><h3>Lion’s mane</h3>  supports concentration, memory and focus - the ultimate brainfood. Can help fight anxiety and depression. Maintain levels of alertness without that post coffee crash. <a target="_blank"  onclick="stopPropagation(event)"></a></div>
+   </div>
+        </div>
+      <div class="loader3"></div>
+        <div class="onClickTextOverImage3"
+        style="background-image:url(./images/coffee.png)">
+     
+     <div><h3>Organic ground coffee </h3> our organic, fair trade coffee is sourced from a plantation in Ecuador that is the lifeblood of the local community. Coffee contains anti-oxidants, and in moderation can reduce internal inflammation and protect against disease. <a target="_blank"  onclick="stopPropagation(event)"></a></div>
    </div>
         </div>
         
@@ -53,6 +74,64 @@
     <script>
 
 var textOverImages = document.getElementsByClassName("onClickTextOverImage");
+var previousTextOverImage;
+ for (var i = 0; i < textOverImages.length; i++) {
+  textOverImages[i].onclick = function() {
+    var classes = this.classList;
+    if (classes.contains("show")) {
+      classes.remove("show");
+    } else {
+      if (previousTextOverImage != null)
+        previousTextOverImage.classList.remove("show");
+      previousTextOverImage = this;
+      classes.add("show");
+    }
+  }
+}
+
+function stopPropagation(event){
+  event.stopPropagation();
+}
+
+var textOverImages = document.getElementsByClassName("onClickTextOverImage1");
+var previousTextOverImage;
+for (var i = 0; i < textOverImages.length; i++) {
+  textOverImages[i].onclick = function() {
+    var classes = this.classList;
+    if (classes.contains("show")) {
+      classes.remove("show");
+    } else {
+      if (previousTextOverImage != null)
+        previousTextOverImage.classList.remove("show");
+      previousTextOverImage = this;
+      classes.add("show");
+    }
+  }
+}
+
+function stopPropagation(event){
+  event.stopPropagation();
+}
+var textOverImages = document.getElementsByClassName("onClickTextOverImage2");
+var previousTextOverImage;
+for (var i = 0; i < textOverImages.length; i++) {
+  textOverImages[i].onclick = function() {
+    var classes = this.classList;
+    if (classes.contains("show")) {
+      classes.remove("show");
+    } else {
+      if (previousTextOverImage != null)
+        previousTextOverImage.classList.remove("show");
+      previousTextOverImage = this;
+      classes.add("show");
+    }
+  }
+}
+
+function stopPropagation(event){
+  event.stopPropagation();
+}
+var textOverImages = document.getElementsByClassName("onClickTextOverImage3");
 var previousTextOverImage;
 for (var i = 0; i < textOverImages.length; i++) {
   textOverImages[i].onclick = function() {

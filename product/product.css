@@ -9,8 +9,8 @@
 body {
   background-image: url('../images/moss\ background.jpg');
   height: 100vh;
-  background-size: cover;
-  background-position: center;
+  width: 100vw;
+  background-position: cover;
   font-family: 'Glamore Regular', sans-serif;
 }
 
@@ -84,7 +84,7 @@ header .navigation .navigation-items a:hover:before {
   margin-top: 18vh;
   margin-left: 38%;
 }
-
+/* Coffee & Mushroom Animation Start*/
 .onClickTextOverImage {
  
   width: 70px;
@@ -174,3 +174,271 @@ header .navigation .navigation-items a:hover:before {
   filter: blur(30px);
 }
 
+.onClickTextOverImage1 {
+ 
+  width: 136px;
+  height: 125px;
+  top: -74vh;
+  left: 58vw;
+  background-size: cover;
+  display: inline-block;
+  border-radius: 16px;
+  margin: 4px;
+
+  cursor: pointer;
+  position: relative;
+}
+
+.onClickTextOverImage1 div {
+  position: absolute;
+  width: 11vw;
+  height: 17vh;
+  color: #fff;
+  padding: 24px;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 2;
+
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 16px;
+  margin-top: 5%;
+  text-align: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.9s;
+}
+
+.onClickTextOverImage1.show div {
+  opacity: 1;
+  padding-top: 1vh;
+  visibility: visible;
+  font-size: 0.6rem;
+}
+
+.loader1
+{
+  position: relative;
+  width: 110px;
+  height: 110px;
+  top: -59vh;
+  margin-left: 61vw;
+  border-radius: 50%;
+  background: linear-gradient(45deg,transparent, transparent 30%, #e8e9ee);
+  animation: animate 2s linear infinite;
+}
+ @keyframes animate {
+  0% {
+    transform: rotate(0deg);
+    filter: hue-rotate(0deg)
+  }
+  100%
+  {
+    transform: rotate(360deg);
+    filter: hue-rotate(360deg);
+  }
+}
+.loader1:before {
+  content: "";
+  position: absolute;
+  top: 6px;
+  left: 6px;
+  right: 6px;
+  bottom: 6px;
+  background: transparent;
+  border-radius: 50%;
+  z-index: 1000;
+}
+.loader1:after {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  background: linear-gradient(45deg,transparent, transparent 30%, #e8e9ee);
+  border-radius: 50%;
+  z-index: 1000;
+  z-index: 1;
+  filter: blur(30px);
+}
+
+
+.onClickTextOverImage2 {
+ 
+  width: 105px;
+  height: 90px;
+  top: -140vh;
+  left: 67vw;
+  background-size: cover;
+  display: inline-block;
+  border-radius: 16px;
+  margin: 4px;
+
+  cursor: pointer;
+  position: relative;
+}
+
+.onClickTextOverImage2 div {
+  position: absolute;
+  width: 10vw;
+  height: 15vh;
+  color: #fff;
+  padding: 20px;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 1;
+
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 16px;
+  margin-top: 5%;
+  text-align: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.9s;
+}
+
+.onClickTextOverImage2.show div {
+  opacity: 1;
+  padding-top: 1vh;
+  visibility: visible;
+  font-size: 0.6rem;
+}
+.loader2
+{
+  position: relative;
+  width: 110px;
+  height: 110px;
+  top: -126vh;
+  margin-left: 67vw;
+  border-radius: 50%;
+  background: linear-gradient(45deg,transparent, transparent 30%, #e8e9ee);
+  animation: animate 2s linear infinite;
+}
+ @keyframes animate {
+  0% {
+    transform: rotate(0deg);
+    filter: hue-rotate(0deg)
+  }
+  100%
+  {
+    transform: rotate(360deg);
+    filter: hue-rotate(360deg);
+  }
+}
+.loader2:before {
+  content: "";
+  position: absolute;
+  top: 6px;
+  left: 6px;
+  right: 6px;
+  bottom: 6px;
+  background: transparent;
+  border-radius: 50%;
+  z-index: 1000;
+}
+.loader2:after {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  background: linear-gradient(45deg,transparent, transparent 30%, #e8e9ee);
+  border-radius: 50%;
+  z-index: 1000;
+  z-index: 1;
+  filter: blur(30px);
+}
+
+.onClickTextOverImage3 {
+ 
+  width: 70px;
+  height: 125px;
+  top: -135vh;
+  left: 22vw;
+  background-size: cover;
+  display: inline-block;
+  border-radius: 16px;
+  margin: 4px;
+
+  cursor: pointer;
+  position: relative;
+}
+
+.onClickTextOverImage3 div {
+  position: absolute;
+  width: 10vw;
+  height: 17vh;
+  color: #fff;
+  padding: 20px;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 1;
+
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 16px;
+  margin-top: 5%;
+  text-align: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.9s;
+}
+
+.onClickTextOverImage3.show div {
+  opacity: 1;
+  padding-top: 1vh;
+  visibility: visible;
+  font-size: 0.6rem;
+}
+
+.loader3
+{
+  position: relative;
+  width: 110px;
+  height: 110px;
+  top: -117vh;
+  margin-left: 21vw;
+  border-radius: 50%;
+  background: linear-gradient(45deg,transparent, transparent 30%, #e8e9ee);
+  animation: animate 2s linear infinite;
+}
+ @keyframes animate {
+  0% {
+    transform: rotate(0deg);
+    filter: hue-rotate(0deg)
+  }
+  100%
+  {
+    transform: rotate(360deg);
+    filter: hue-rotate(360deg);
+  }
+}
+.loader3:before {
+  content: "";
+  position: absolute;
+  top: 6px;
+  left: 6px;
+  right: 6px;
+  bottom: 6px;
+  background: transparent;
+  border-radius: 50%;
+  z-index: 1000;
+}
+.loader3:after {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  background: linear-gradient(45deg,transparent, transparent 30%, #e8e9ee);
+  border-radius: 50%;
+  z-index: 1000;
+  z-index: 1;
+  filter: blur(30px);
+}
+
+/* Coffee & Mushroom Animation  End*/
