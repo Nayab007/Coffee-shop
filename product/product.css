@@ -5,6 +5,12 @@
   src: local('Glamore Regular'),
     url('../images/Glamore-lgE7w.woff') format('woff');
 }
+@font-face {
+  font-family: 'Geosans Light';
+  font-style: normal;
+  font-weight: normal;
+  src: local('Geosans Light'), url("../images/GeosansLight.woff") format('woff');
+}
 
 body {
   background-image: url('../images/moss\ background.jpg');
@@ -72,7 +78,7 @@ header .navigation .navigation-items a:hover:before {
   position: absolute;
   color: #000000;
   font-size: 20px;
-
+  font-family: "Geosans Light";
   width: 10%;
   margin-left: 40%;
   margin-top: 32vh;
