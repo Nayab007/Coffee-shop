@@ -6,7 +6,7 @@
  <head>
 
    <Link rel="stylesheet" href="product/product.css">
-      <script defer src="./product/script.js"></script>
+      <script defer src="product/script.js"></script>
        
    
 </head>
@@ -29,12 +29,7 @@
          <span id="result" ></span>
      </div>
     
-    
-    
-     
-     
-    
-   </div>
+ </div>
    <div class="coffeemug1">
       <img src="./images/coffeemug12.png" alt="coffeemug"  layout="responsive" width="225px" height="500px" >
       </div>  
@@ -68,107 +63,5 @@
         </div>
         
       </div>
-
-
-
-    <script>
-
-var textOverImages = document.getElementsByClassName("onClickTextOverImage");
-var previousTextOverImage;
- for (var i = 0; i < textOverImages.length; i++) {
-  textOverImages[i].onclick = function() {
-    var classes = this.classList;
-    if (classes.contains("show")) {
-      classes.remove("show");
-    } else {
-      if (previousTextOverImage != null)
-        previousTextOverImage.classList.remove("show");
-      previousTextOverImage = this;
-      classes.add("show");
-    }
-  }
-}
-
-function stopPropagation(event){
-  event.stopPropagation();
-}
-
-var textOverImages = document.getElementsByClassName("onClickTextOverImage1");
-var previousTextOverImage;
-for (var i = 0; i < textOverImages.length; i++) {
-  textOverImages[i].onclick = function() {
-    var classes = this.classList;
-    if (classes.contains("show")) {
-      classes.remove("show");
-    } else {
-      if (previousTextOverImage != null)
-        previousTextOverImage.classList.remove("show");
-      previousTextOverImage = this;
-      classes.add("show");
-    }
-  }
-}
-
-function stopPropagation(event){
-  event.stopPropagation();
-}
-var textOverImages = document.getElementsByClassName("onClickTextOverImage2");
-var previousTextOverImage;
-for (var i = 0; i < textOverImages.length; i++) {
-  textOverImages[i].onclick = function() {
-    var classes = this.classList;
-    if (classes.contains("show")) {
-      classes.remove("show");
-    } else {
-      if (previousTextOverImage != null)
-        previousTextOverImage.classList.remove("show");
-      previousTextOverImage = this;
-      classes.add("show");
-    }
-  }
-}
-
-function stopPropagation(event){
-  event.stopPropagation();
-}
-var textOverImages = document.getElementsByClassName("onClickTextOverImage3");
-var previousTextOverImage;
-for (var i = 0; i < textOverImages.length; i++) {
-  textOverImages[i].onclick = function() {
-    var classes = this.classList;
-    if (classes.contains("show")) {
-      classes.remove("show");
-    } else {
-      if (previousTextOverImage != null)
-        previousTextOverImage.classList.remove("show");
-      previousTextOverImage = this;
-      classes.add("show");
-    }
-  }
-}
-
-function stopPropagation(event){
-  event.stopPropagation();
-}
-
-
-
-      var i=0;
-        text = document.getElementById("result").innerHTML=localStorage.getItem("textvalue");
-    function typing() {
-         if (i<text.length){
-           
-           document.getElementById("result").innerHTML += text.charAt(i);
-            i++;
-            setTimeout(typing,400);
-         }
-    }
-    typing();
-    
-    document.getElementById("demo").innerHTML = hello;
-
-    </script>
-  
-    
     </body>
 </html> 

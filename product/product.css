@@ -14,9 +14,9 @@
 
 body {
   background-image: url('../images/moss\ background.jpg');
-  height: 100vh;
-  width: 100vw;
-  background-position: cover;
+  height: 100%;
+  width: 100%;
+ 
   font-family: 'Glamore Regular', sans-serif;
 }
 
