@@ -346,7 +346,7 @@ section {
     font-size: large;
     width: 200px;
     margin-top: 4vh;
-    left: -6vw;
+    margin-left: -8vw;
     background: transparent;
     outline: none;
     padding: 10px;
@@ -365,7 +365,7 @@ section {
   .btn {
     font-size: 16px;
     margin-left: -22%;
-    margin-bottom: -24%;
+    margin-bottom: -22%;
     background: transparent;
     border: 25px;
     padding: 10px;
@@ -384,8 +384,8 @@ section {
   position: relative;
   top: -4vh;
   width: 66vw;
-  font-weight: 900;
-  margin-left: 10vw;
+  font-weight: 700;
+  margin-left: 8vw;
  text-align: center;
 }
 .input {
@@ -394,7 +394,7 @@ section {
   font-size: large;
   width: 200px;
   margin-top: -2vh;
-  margin-left: 1vw;
+  margin-right: -1vw;
   background: transparent;
   outline: none;
   padding: 10px;
@@ -406,7 +406,7 @@ section {
 
 .btn {
   font-size: 16px;
-  left: 20vw;
+  left: 18vw;
   margin-bottom: -14%;
   background: transparent;
   border: 25px;
@@ -444,7 +444,7 @@ section {
   font-size: large;
   width: 300px;
   margin-top: -10vh;
-  margin-left: 10vw;
+  margin-left: 6vw;
   background: transparent;
   outline: none;
   padding: 10px;
@@ -455,7 +455,7 @@ section {
 
 .btn {
   font-size: 16px;
-  left: 29vw;
+  left: 32vw;
   margin-bottom: 14%;
   background: transparent;
   border: 25px;
@@ -470,7 +470,7 @@ section {
 }
 
 
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 1000px) and (max-width: 1199px) {
 
   .home .content h1{
     font-size: 3em;
@@ -480,7 +480,7 @@ section {
   position: relative;
   top: -10vh;
   width: 38vw;
-  margin-left: 10vw;
+  margin-left: 11vw;
   text-align: center;
 }
 
@@ -490,7 +490,7 @@ section {
   font-size: large;
   width: 400px;
   top: 16vh;
-  left: -20vw;
+  left: -16vw;
   background: transparent;
   outline: none;
   padding: 10px;
@@ -514,7 +514,7 @@ section {
 }
 
 }
-@media only screen and (min-width: 1000px) {
+@media only screen and (min-width: 1200px) {
 
   .home .content h1{
     font-size: 3em;
@@ -523,8 +523,8 @@ section {
 .name {
   position: relative;
   top: -10vh;
-  width: 38vw;
-  margin-left: 14vw;
+  width: 48vw;
+  margin-left: 10vw;
   text-align: center;
 }
 
@@ -534,7 +534,7 @@ section {
   font-size: large;
   width: 400px;
   top: 16vh;
-  left: -17vw;
+  left: -12vw;
   background: transparent;
   outline: none;
   padding: 10px;
@@ -546,7 +546,7 @@ section {
 .btn {
   
   font-size: 16px;
-   left: 3vw;
+   left: 5vw;
   bottom: -24vh;
   background: transparent;
   border: 25px;
@@ -558,4 +558,3 @@ section {
 }
 
 }
-
