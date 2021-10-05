@@ -3,10 +3,16 @@
   
 
    <body>
+   
  <head>
-
+  <script
+  src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous"></script>
    <Link rel="stylesheet" href="product/product.css">
       <script defer src="product/script.js"></script>
+       
+    
        
    
 </head>
@@ -24,15 +30,28 @@
        </div>
    </div>
 </header>
-     
+
+<div class="bg">hi</div>
+<div class="coffeemug1">
+  <img src="./images/coffeemug12.png" alt="coffeemug"  layout="responsive" width="225px" height="500px" >
+  </div> 
       <div class="h2">
          <span id="result" ></span>
      </div>
-    
  </div>
-   <div class="coffeemug1">
-      <img src="./images/coffeemug12.png" alt="coffeemug"  layout="responsive" width="225px" height="500px" >
-      </div>  
+ <div class="container">
+  <input type="text" name="qty" class="qty"  max="100" class="input-text qty" />
+  <div class="button-container">
+      <button class="cart-qty-plus" type="button" >+</button>
+      <button class="cart-qty-minus" type="button">-</button>
+      <button class="cart-qty-plus" type="button">+</button>
+      <button class="cart-qty-minus" type="button">-</button>
+      <button class="cart-qty-plus" type="button">+</button>
+      <button class="cart-qty-minus" type="button">-</button>
+</div>
+</div>
+
+    
       <div class="loader"></div>
         <div class="onClickTextOverImage"
         style="background-image:url(./images/cordycepsmilitaris.png)">
@@ -46,6 +65,7 @@
      
      <div><h3>Chaga</h3> helps with your body’s detoxification process and strengthens your immune system. Has been used for centuries in traditional medicine for overall wellbeing including lowering blood pressure, cholesterol, and anti ageing properties. <a target="_blank"  onclick="stopPropagation(event)"></a></div>
    </div>
+   
         </div>
       <div class="loader2"></div>
         <div class="onClickTextOverImage2"
@@ -63,5 +83,38 @@
         </div>
         
       </div>
+  
+      <script>
+        /* Add & subtract function */
+        var incrementPlus;
+var incrementMinus;
+
+var buttonPlus = $('.cart-qty-plus');
+var buttonMinus = $('.cart-qty-minus');
+
+var incrementPlus = buttonPlus.click(function () {
+  var $n = $(this)
+    .parent('.button-container')
+    .parent('.container')
+    .find('.qty');
+  var amount = Number($n.val());
+  if (amount < 100) {
+    $n.val(amount + 5);
+  }
+});
+
+var incrementMinus = buttonMinus.click(function () {
+  var $n = $(this)
+    .parent('.button-container')
+    .parent('.container')
+    .find('.qty');
+  var amount = Number($n.val());
+  if (amount > 0) {
+    $n.val(amount - 5);
+  }
+});
+
+/* Add & subtract function end */
+      </script>
     </body>
 </html> 
