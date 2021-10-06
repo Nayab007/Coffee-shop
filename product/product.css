@@ -467,9 +467,81 @@ header .navigation .navigation-items a:hover:before {
   background-size: cover; 
 }
 
-.container {
-  background-color: #ffffff;
-	margin-top: -10vh;	
-  width: 14vw;
-  margin-left: 40vw;
+
+/* Progress Bar */
+.container1 {
+  width: 70%;
+  margin: -100px auto;
+  font-family: "Geosans Light";
+  color: #ffffff;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+input[type=range] {
+  position: relative;
+  margin-left: -35vw;
+  width: 50vw;
+  color:rgb(104, 230, 79);
+}
+
+.buttonplus {
+  position: relative;
+  flex: 0 0 auto;
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  top: -55vh;
+  left: -5vw;
+  background: white;
+  font-size: 24px;
+  border: 1px solid lightgrey;
+  cursor: pointer;
+  -webkit-appearance: none;
+  background-color: rgb(115, 238, 98);
+ 
+}
+.buttonminus {
+  position: relative;
+  flex: 0 0 auto;
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  margin-top: -110vh;
+  font-size: 24px;
+  border: 1px solid lightgrey;
+  cursor: pointer;
+  -webkit-appearance: none;
+  background-color: rgb(141, 255, 126);
+}
+.buttonplus1 {
+  position: relative;
+  flex: 0 0 auto;
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  top: -55vh;
+  left: 23vw;
+  background: white;
+  font-size: 24px;
+  border: 1px solid lightgrey;
+  cursor: pointer;
+  -webkit-appearance: none;
+  background-color: rgb(115, 238, 98);
+ 
+}
+.buttonminus1 {
+  position: relative;
+  flex: 0 0 auto;
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  margin-top: -110vh;
+  left: 29vw;
+  font-size: 24px;
+  border: 1px solid lightgrey;
+  cursor: pointer;
+  -webkit-appearance: none;
+  background-color: rgb(141, 255, 126);
 }

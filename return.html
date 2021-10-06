@@ -31,7 +31,7 @@
    </div>
 </header>
 
-<div class="bg">hi</div>
+ <div class="bg"></div>  
 <div class="coffeemug1">
   <img src="./images/coffeemug12.png" alt="coffeemug"  layout="responsive" width="225px" height="500px" >
   </div> 
@@ -39,18 +39,14 @@
          <span id="result" ></span>
      </div>
  </div>
- <div class="container">
- <input type="text" name="qty" class="qty"  max="100" class="input-text qty" /> 
-  <div class="button-container">
-      <button class="cart-qty-plus" type="button" >+</button>
-      <button class="cart-qty-minus" type="button">-</button>
-      <button class="cart-qty-plus" type="button">+</button>
-      <button class="cart-qty-minus" type="button">-</button>
-      <button class="cart-qty-plus" type="button">+</button>
-      <button class="cart-qty-minus" type="button">-</button>
-      <button class="cart-qty-plus" type="button">+</button>
-      <button class="cart-qty-minus" type="button">-</button>
-</div>
+ <div class="container1">
+  <button class="buttonminus" id="minus">-</button>
+  <button class="buttonplus"id="plus">+</button>
+  <button class="buttonminus1" id="minus1">-</button>
+  <button class="buttonplus1"id="plus1">+</button>
+  <input id="range" type="range" step="5" value="0">
+  
+  <output for="range" id="output" value=""></output>
 </div>
 
     
@@ -61,8 +57,7 @@
      <div><h3>Cordyceps</h3> often used by athletes to improve stamina, endurance, and and overall performance by its promotion of blood flow. Also has anti-inflammatory and even libido-boosting properties. <a target="_blank"  onclick="stopPropagation(event)"></a></div>
    </div>
    
-   <button class="cart-qty-plus" type="button" >+</button>
-   <button class="cart-qty-minus" type="button">-</button>
+
   </div>
 </div>
         </div>
@@ -91,38 +86,42 @@
         </div>
         
       </div>
-  
-      <script>
-        /* Add & subtract function */
-        var incrementPlus;
-var incrementMinus;
-
-var buttonPlus = $('.cart-qty-plus');
-var buttonMinus = $('.cart-qty-minus');
-
-var incrementPlus = buttonPlus.click(function () {
-  var $n = $(this)
-    .parent('.button-container')
-    .parent('.container')
-    .find('.qty');
-  var amount = Number($n.val());
-  if (amount < 100) {
-    $n.val(amount + 5);
-  }
+        <script>
+          $("#minus").click(function(event) {
+  zoom("out");
 });
 
-var incrementMinus = buttonMinus.click(function () {
-  var $n = $(this)
-    .parent('.button-container')
-    .parent('.container')
-    .find('.qty');
-  var amount = Number($n.val());
-  if (amount > 0) {
-    $n.val(amount - 5);
-  }
+$("#plus").click(function(event) {
+  zoom("in");
+});
+          $("#minus1").click(function(event) {
+  zoom("out");
 });
 
-/* Add & subtract function end */
-      </script>
+$("#plus1").click(function(event) {
+  zoom("in");
+});
+
+$("#range").on('input change', function(event) {
+  $('#output').text($(event.currentTarget).val());
+});
+
+function zoom(direction) {
+  var slider = $("#range");
+  var step = parseInt(slider.attr('step'), 10);
+  var currentSliderValue = parseInt(slider.val(), 10);
+  var newStepValue = currentSliderValue + step;
+
+  if (direction === "out") {
+    newStepValue = currentSliderValue - step;
+  } else {
+    newStepValue = currentSliderValue + step;
+  }
+
+  slider.val(newStepValue).change();
+};
+        </script>
+     
+      
     </body>
 </html> 

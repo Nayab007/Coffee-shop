@@ -100,32 +100,31 @@ document.getElementById('demo').innerHTML = hello;
 /* Result Animation function from enter first page end*/
 
 /* Add & subtract function */
-var incrementPlus;
-var incrementMinus;
-
-var buttonPlus = $('.cart-qty-plus');
-var buttonMinus = $('.cart-qty-minus');
-
-var incrementPlus = buttonPlus.click(function () {
-  var $n = $(this)
-    .parent('.button-container')
-    .parent('.container')
-    .find('.qty');
-  var amount = Number($n.val());
-  if (amount < 100) {
-    $n.val(amount + 5);
-  }
+$("#minus").click(function(event) {
+  zoom("out");
 });
 
-var incrementMinus = buttonMinus.click(function () {
-  var $n = $(this)
-    .parent('.button-container')
-    .parent('.container')
-    .find('.qty');
-  var amount = Number($n.val());
-  if (amount > 0) {
-    $n.val(amount - 5);
-  }
+$("#plus").click(function(event) {
+  zoom("in");
 });
+
+$("#range").on('input change', function(event) {
+  $('#output').text($(event.currentTarget).val());
+});
+
+function zoom(direction) {
+  var slider = $("#range");
+  var step = parseInt(slider.attr('step'), 10);
+  var currentSliderValue = parseInt(slider.val(), 10);
+  var newStepValue = currentSliderValue + step;
+
+  if (direction === "out") {
+    newStepValue = currentSliderValue - step;
+  } else {
+    newStepValue = currentSliderValue + step;
+  }
+
+  slider.val(newStepValue).change();
+};
 
 /* Add & subtract function end */
