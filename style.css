@@ -382,7 +382,7 @@ section {
  
 .name {
   position: relative;
-  top: -4vh;
+  top: -12vh;
   width: 66vw;
   font-weight: 700;
   margin-left: 8vw;
@@ -393,7 +393,7 @@ section {
   color: #fff;
   font-size: large;
   width: 200px;
-  margin-top: -2vh;
+  margin-top: -10vh;
   margin-right: -1vw;
   background: transparent;
   outline: none;
