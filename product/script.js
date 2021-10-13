@@ -1,3 +1,62 @@
+/* Increment & decrement */
+var incrementButton = document.getElementsByClassName('inc');
+var decrementButton = document.getElementsByClassName('dec');
+
+for(var i = 0; i < incrementButton.length; i++){
+var button = incrementButton[i];
+button.addEventListener('click',function(event){
+  var buttonClicked = event.target;
+  var input = buttonClicked.parentElement.children[2];
+  var inputValue = input.value;
+  var newValue = parseInt(inputValue) + 5;
+   if (newValue <= 100) {
+      input.value = newValue;
+    }
+   else {
+     alert('Qty cannot be more than 100');
+   } 
+  
+  getTotal();
+})
+}
+
+for(var i = 0; i < decrementButton.length; i++){
+var button = decrementButton[i];
+  button.addEventListener('click',function(event){
+  var buttonClicked = event.target;
+  var input = buttonClicked.parentElement.children[2];
+  var inputValue = input.value;
+  var newValue = parseInt(inputValue) - 5;
+    if (newValue >= 0) {
+      input.value = newValue;
+    }
+   else {
+     alert('Qty cannot be less than zero');
+   } 
+     getTotal();
+})
+}
+
+function getTotal() {
+var arr = document.querySelectorAll('.input-filed');
+var total = 0;
+for(var i = 0; i < arr.length; i++ ) {
+  if (parseInt(arr[i].value)) {
+    total += parseInt(arr[i].value);
+    
+  }
+}
+document.getElementById('total').value = total;
+}
+
+
+/* Increment & decrement end */
+
+
+
+
+
+
 /* Name Animation function */
 var textOverImages = document.getElementsByClassName('onClickTextOverImage');
 var previousTextOverImage;
@@ -99,32 +158,3 @@ document.getElementById('demo').innerHTML = hello;
 
 /* Result Animation function from enter first page end*/
 
-/* Add & subtract function */
-$("#minus").click(function(event) {
-  zoom("out");
-});
-
-$("#plus").click(function(event) {
-  zoom("in");
-});
-
-$("#range").on('input change', function(event) {
-  $('#output').text($(event.currentTarget).val());
-});
-
-function zoom(direction) {
-  var slider = $("#range");
-  var step = parseInt(slider.attr('step'), 10);
-  var currentSliderValue = parseInt(slider.val(), 10);
-  var newStepValue = currentSliderValue + step;
-
-  if (direction === "out") {
-    newStepValue = currentSliderValue - step;
-  } else {
-    newStepValue = currentSliderValue + step;
-  }
-
-  slider.val(newStepValue).change();
-};
-
-/* Add & subtract function end */

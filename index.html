@@ -53,6 +53,20 @@
       navigation.classList.toggle("active");
     });
 
+var i = 0;
+text = document.getElementById('result').innerHTML =
+  localStorage.getItem('textvalue');
+function typing() {
+  if (i < text.length) {
+    document.getElementById('result').innerHTML += text.charAt(i);
+    i++;
+    setTimeout(typing, 400);
+  }
+}
+typing();
+
+document.getElementById('demo').innerHTML = hello;
+
     //Javacript for video slider navigation
     const btns = document.querySelectorAll(".nav-btn");
     const slides = document.querySelectorAll(".video-slide");
@@ -84,7 +98,7 @@
            function passvalue() {
                var firstname = document.getElementById("name").value;
                localStorage.setItem("textvalue", firstname);
-               return "return.html";
+               return "typing()";
            }
           
         

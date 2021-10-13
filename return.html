@@ -5,10 +5,7 @@
    <body>
    
  <head>
-  <script
-  src="https://code.jquery.com/jquery-3.6.0.min.js"
-  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
-  crossorigin="anonymous"></script>
+  
    <Link rel="stylesheet" href="product/product.css">
       <script defer src="product/script.js"></script>
        
@@ -33,21 +30,12 @@
 
  <div class="bg"></div>  
 <div class="coffeemug1">
-  <img src="./images/coffeemug12.png" alt="coffeemug"  layout="responsive" width="225px" height="500px" >
+  <img src="./images/coffeemug12.png" alt="coffeemug"  layout="responsive" width="225px"    height="500px" >
   </div> 
       <div class="h2">
          <span id="result" ></span>
      </div>
- </div>
- <div class="container1">
-  <button class="buttonminus" id="minus">-</button>
-  <button class="buttonplus"id="plus">+</button>
-  <button class="buttonminus1" id="minus1">-</button>
-  <button class="buttonplus1"id="plus1">+</button>
-  <input id="range" type="range" step="5" value="0">
-  
-  <output for="range" id="output" value=""></output>
-</div>
+
 
     
       <div class="loader"></div>
@@ -56,25 +44,37 @@
      
      <div><h3>Cordyceps</h3> often used by athletes to improve stamina, endurance, and and overall performance by its promotion of blood flow. Also has anti-inflammatory and even libido-boosting properties. <a target="_blank"  onclick="stopPropagation(event)"></a></div>
    </div>
-   
-
+   <div class="Cordyceps">
+    <label for="name">Cordyceps</label>
+    <div class="dec button">-</div>
+    <input type="text" name="qty" id="1" value="0" class="input-filed">
+    <div class="inc button">+</div>
   </div>
-</div>
-        </div>
+       
       <div class="loader1"></div>
         <div class="onClickTextOverImage1"
         style="background-image:url(./images/Chaga.png)">
      
      <div><h3>Chaga</h3> helps with your body’s detoxification process and strengthens your immune system. Has been used for centuries in traditional medicine for overall wellbeing including lowering blood pressure, cholesterol, and anti ageing properties. <a target="_blank"  onclick="stopPropagation(event)"></a></div>
    </div>
-   
-        </div>
+   <div class="Chaga">
+    <label for="name">Chaga</label>
+    <div class="dec button">-</div>
+    <input type="text" name="qty" id="2" value="0" class="input-filed">
+    <div class="inc button">+</div>
+  </div>
       <div class="loader2"></div>
         <div class="onClickTextOverImage2"
         style="background-image:url(./images/Lion_smane.png)">
      
      <div><h3>Lion’s mane</h3>  supports concentration, memory and focus - the ultimate brainfood. Can help fight anxiety and depression. Maintain levels of alertness without that post coffee crash. <a target="_blank"  onclick="stopPropagation(event)"></a></div>
    </div>
+     <div class="Lionsmane">
+    <label for="name">Lion's mane</label>
+    <div class="dec button">-</div>
+    <input type="text" name="qty" id="3" value="0" class="input-filed">
+    <div class="inc button">+</div>
+     </div>
         </div>
       <div class="loader3"></div>
         <div class="onClickTextOverImage3"
@@ -82,45 +82,30 @@
      
      <div><h3>Organic ground coffee </h3> our organic, fair trade coffee is sourced from a plantation in Ecuador that is the lifeblood of the local community. Coffee contains anti-oxidants, and in moderation can reduce internal inflammation and protect against disease. <a target="_blank"  onclick="stopPropagation(event)"></a></div>
    </div>
- 
-        </div>
+   <div class="Coffee">
+    <label for="name">Coffee</label>
+    <div class="dec button">-</div>
+    <input type="text" name="qty" id="4" value="0" class="input-filed">
+    <div class="inc button">+</div>
+  </div>
         
-      </div>
+        
+      
+    <div class="boxtotal">
+      <label  >TOTAL : </label>
+      <input class="inputtotal" type="text" id="total" value="0" disabled="">
+    </div>
         <script>
-          $("#minus").click(function(event) {
-  zoom("out");
-});
+ 
+/* Coffee & Mushroom Animation function End */
 
-$("#plus").click(function(event) {
-  zoom("in");
-});
-          $("#minus1").click(function(event) {
-  zoom("out");
-});
+/* Result Animation function from enter first page*/
 
-$("#plus1").click(function(event) {
-  zoom("in");
-});
 
-$("#range").on('input change', function(event) {
-  $('#output').text($(event.currentTarget).val());
-});
 
-function zoom(direction) {
-  var slider = $("#range");
-  var step = parseInt(slider.attr('step'), 10);
-  var currentSliderValue = parseInt(slider.val(), 10);
-  var newStepValue = currentSliderValue + step;
+/* Result Animation function from enter first page end*/
 
-  if (direction === "out") {
-    newStepValue = currentSliderValue - step;
-  } else {
-    newStepValue = currentSliderValue + step;
-  }
-
-  slider.val(newStepValue).change();
-};
-        </script>
+   </script>
      
       
     </body>
