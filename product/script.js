@@ -13,7 +13,7 @@ button.addEventListener('click',function(event){
       input.value = newValue;
     }
    else {
-     alert('Qty cannot be more than 100');
+     alert('Qty cannot be more than 100%');
    } 
   
   getTotal();
@@ -27,11 +27,11 @@ var button = decrementButton[i];
   var input = buttonClicked.parentElement.children[2];
   var inputValue = input.value;
   var newValue = parseInt(inputValue) - 5;
-    if (newValue >= 0) {
+    if (newValue >= 70) {
       input.value = newValue;
     }
    else {
-     alert('Qty cannot be less than zero');
+     alert('Qty cannot be less than 70%');
    } 
      getTotal();
 })
@@ -48,6 +48,57 @@ for(var i = 0; i < arr.length; i++ ) {
 document.getElementById('total').value = total;
 }
 
+/* function 2 */
+
+var incrementButton = document.getElementsByClassName('inc1');
+var decrementButton = document.getElementsByClassName('dec1');
+
+for(var i = 0; i < incrementButton.length; i++){
+var button = incrementButton[i];
+button.addEventListener('click',function(event){
+  var buttonClicked = event.target;
+  var input = buttonClicked.parentElement.children[2];
+  var inputValue = input.value;
+  var newValue = parseInt(inputValue) + 5;
+   if (newValue <= 40) {
+      input.value = newValue;
+    }
+   else {
+     alert('Qty cannot be more than 40%');
+   } 
+  
+  getTotal();
+})
+}
+
+for(var i = 0; i < decrementButton.length; i++){
+var button = decrementButton[i];
+  button.addEventListener('click',function(event){
+  var buttonClicked = event.target;
+  var input = buttonClicked.parentElement.children[2];
+  var inputValue = input.value;
+  var newValue = parseInt(inputValue) - 5;
+    if (newValue >= 10) {
+      input.value = newValue;
+    }
+   else {
+     alert('Qty cannot be less than 10%');
+   } 
+     getTotal();
+})
+}
+
+function getTotal() {
+var arr = document.querySelectorAll('.input-filed');
+var total = 0;
+for(var i = 0; i < arr.length; i++ ) {
+  if (parseInt(arr[i].value)) {
+    total += parseInt(arr[i].value);
+  }
+}
+document.getElementById('total').value = total;
+}
+/* function 2 ends*/
 
 /* Increment & decrement end */
 
