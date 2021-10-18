@@ -206,5 +206,9 @@ typing();
 
 document.getElementById('demo').innerHTML = hello;
 
+finishBtn.addEventListener( 'click', ()=> {
+  location.reload();
+});
+
 /* Result Animation function from enter first page end*/
 
