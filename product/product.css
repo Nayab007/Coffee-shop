@@ -650,14 +650,15 @@ header .navigation .navigation-items a:hover:before {
 
 .boxtotal {
   color: #000000;
-  width: 240px;
+  width: 30vw;
   display: flex;
   align-items: center;
   justify-content: center;
-  padding: 1px;
-  margin-left: 36vw;
+  padding: 5px;
+  
+  margin-left: 28vw;
   margin-top: 22vw;
-  border-radius: 30px;
+  border-radius: 20px;
   border: 1px solid #94e774;
   font-family: 'Geosans Light';
   box-shadow: 2px 2px 8px rgba(17, 230, 17, 0.973);
@@ -673,4 +674,17 @@ header .navigation .navigation-items a:hover:before {
   color: #000000;
   position: relative;
   z-index: 2;
+}
+/* percentage input end */
+
+.finishBtn{
+  font-family: 'Glamore Regular';
+  color: #000000;
+  width: 10px;
+  height: 20px;
+  align-items: center;
+  justify-content: center;
+  font-size: 20px;
+ cursor: pointer;
+ 
 }

@@ -206,9 +206,21 @@ typing();
 
 document.getElementById('demo').innerHTML = hello;
 
-finishBtn.addEventListener( 'click', ()=> {
-  location.reload();
-});
-
 /* Result Animation function from enter first page end*/
 
+
+/* Total value to checkout page */
+
+function passvalue() {
+  var firstname = document.getElementById("4").value;
+  localStorage.setItem("textvalue", firstname);
+  return "typing()";
+}
+
+
+
+
+
+
+
+/* Total value to checkout page end */
