@@ -211,11 +211,8 @@ document.getElementById('demo').innerHTML = hello;
 
 /* Total value to checkout page */
 
-function passvalue() {
-  var firstname = document.getElementById("4").value;
-  localStorage.setItem("textvalue", firstname);
-  return "typing()";
-}
+
+
 
 
 

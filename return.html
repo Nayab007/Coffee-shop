@@ -37,7 +37,7 @@
      </div>
 
 
-    
+     <form action="checkout/checkout.html" method="POST">
       <div class="loader"></div>
         <div class="onClickTextOverImage"
         style="background-image:url(./images/cordycepsmilitaris.png)">
@@ -89,14 +89,13 @@
     <div class="inc button">+</div>
   </div>
         
-        
-      
-    <div class="boxtotal">
+  
+     <div class="boxtotal">
       <label  >TOTAL  </label>
-      <input class="inputtotal" type="text" id="total" value="100" disabled=""><span class="percent-sign">%</span>
-    <a class="finishBtn" href="./checkout/checkout.html" onclick="passvalue()">CheckOut</a>
+      <input class="inputtotal" type="text" id="total" value="100" disabled=""><span class="percent-sign">%  <input type="submit" onclick="handleSubmit()"/></span>
+      
     </div>
-    
+  </form>
         <script>
  
 /* Coffee & Mushroom Animation function End */
@@ -107,7 +106,27 @@
 
 /* Result Animation function from enter first page end*/
 
-   </script>
+function handleSubmit () {
+  const name = document.getElementById('4').value;
+  const surname = document.getElementById('1').value;
+  const firstname = document.getElementById('3').value;
+  const middlename = document.getElementById('2').value;
+ 
+
+  // to set into local storage
+  /* localStorage.setItem("NAME", name);
+  localStorage.setItem("SURNAME", surname); */
+  
+  sessionStorage.setItem("NAME", name);
+  sessionStorage.setItem("SURNAME", surname);
+  sessionStorage.setItem("FIRSTNAME", firstname);
+  sessionStorage.setItem("MIDDLENAME", middlename);
+
+  return;
+}
+</script>
+
+
      
       
     </body>

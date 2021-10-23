@@ -9,28 +9,45 @@
 </head>
 <body>
     <h2>Checkout page</h2>
-    <div class="h2">
-        <span id="result" ></span>
-    </div>
+   
+  <h2>
+      Coffee: <span id="result-name" />
+  </h2>
+  <h2>
+    Cordyceps: <span id="result-surname" />
+  </h2>
+  <h2>Lion's mane : <span id="result-firstname"/>
+  </h2>
+  <h2>Chaga: <span id="result-middlename"/>
+  </h2>
 </body>
-<script>
-    var i = 0;
-text = document.getElementById('result').innerHTML =
-  localStorage.getItem('textvalue');
-document.getElementById('demo').innerHTML = hello;
-finishBtn.addEventListener( 'click', ()=> {
-  location.reload();
-});
 
-const menuBtn = document.querySelector(".menu-btn");
-    const navigation = document.querySelector(".navigation");
+ <script>
+    window.addEventListener('load', () => {
 
-    menuBtn.addEventListener("click", () => {
-      menuBtn.classList.toggle("active");
-      navigation.classList.toggle("active");
-    });
+// Via Query parameters - GET
+/* const params = (new URL(document.location)).searchParams;
+const name = params.get('name');
+const surname = params.get('surname'); */
 
-    
+// Via local Storage
+/* const name = localStorage.getItem('NAME');
+const surname = localStorage.getItem('SURNAME'); */
+
+const name = sessionStorage.getItem('NAME');
+const surname = sessionStorage.getItem('SURNAME');
+const firstname = sessionStorage.getItem('FIRSTNAME');
+const middlename = sessionStorage.getItem('MIDDLENAME');
+
+document.getElementById('result-name').innerHTML = name;
+document.getElementById('result-surname').innerHTML = surname;
+document.getElementById('result-firstname').innerHTML = firstname;
+document.getElementById('result-middlename').innerHTML = middlename;
+
+})
+
 
 </script>
+
+    
 </html>
