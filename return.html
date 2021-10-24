@@ -85,7 +85,7 @@
    <div class="Coffee">
     <label for="name">Coffee</label>
     <div class="dec button">-</div>
-    <input type="text" name="qty" id="4" value="70"  class="input-filed" ><a  onclick="passvalue()" class="percent-sign">%</a>
+    <input type="text" name="qty" id="4" value="70"  class="input-filed" ><a class="percent-sign">%</a>
     <div class="inc button">+</div>
   </div>
         
@@ -124,6 +124,13 @@ function handleSubmit () {
 
   return;
 }
+
+
+function passvalue() {
+               var firstname = document.getElementById("name").value;
+               localStorage.setItem("textvalue", firstname);
+               return "typing()";
+           }
 </script>
 
 
