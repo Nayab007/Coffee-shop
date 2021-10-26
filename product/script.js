@@ -1,4 +1,107 @@
+/* Increment & decrement */
 
+var incrementButton = document.getElementsByClassName('inc');
+var decrementButton = document.getElementsByClassName('dec');
+
+for(var i = 0; i < incrementButton.length; i++){
+var button = incrementButton[i];
+button.addEventListener('click',function(event){
+  var buttonClicked = event.target;
+  var input = buttonClicked.parentElement.children[2];
+  var inputValue = input.value;
+  var newValue = parseInt(inputValue) + 5;
+   if (newValue <= 100) {
+      input.value = newValue;
+    }
+   else {
+     alert('Qty cannot be more than 100%');
+   } 
+  
+  getTotal();
+})
+}
+
+for(var i = 0; i < decrementButton.length; i++){
+var button = decrementButton[i];
+  button.addEventListener('click',function(event){
+  var buttonClicked = event.target;
+  var input = buttonClicked.parentElement.children[2];
+  var inputValue = input.value;
+  var newValue = parseInt(inputValue) - 5;
+    if (newValue >= 70) {
+      input.value = newValue;
+    }
+   else {
+     alert('Qty cannot be less than 70%');
+   } 
+     getTotal();
+})
+}
+
+function getTotal() {
+var arr = document.querySelectorAll('.input-filed');
+var total = 0;
+for(var i = 0; i < arr.length; i++ ) {
+  if (parseInt(arr[i].value)) {
+    total += parseInt(arr[i].value);
+  }
+}
+document.getElementById('total').value = total;
+}
+
+/* function 2 */
+
+var incrementButton = document.getElementsByClassName('inc1');
+var decrementButton = document.getElementsByClassName('dec1');
+
+for(var i = 0; i < incrementButton.length; i++){
+var button = incrementButton[i];
+button.addEventListener('click',function(event){
+  var buttonClicked = event.target;
+  var input = buttonClicked.parentElement.children[2];
+  var inputValue = input.value;
+  var newValue = parseInt(inputValue) + 5;
+   if (newValue <= 40) {
+      input.value = newValue;
+    }
+   else {
+     alert('Qty cannot be more than 40%');
+   } 
+  
+  getTotal();
+})
+}
+
+for(var i = 0; i < decrementButton.length; i++){
+var button = decrementButton[i];
+  button.addEventListener('click',function(event){
+  var buttonClicked = event.target;
+  var input = buttonClicked.parentElement.children[2];
+  var inputValue = input.value;
+  var newValue = parseInt(inputValue) - 5;
+    if (newValue >= 5) {
+      input.value = newValue;
+    }
+   else {
+     alert('Qty cannot be less than 0%');
+   } 
+     getTotal();
+})
+}
+
+function getTotal() {
+var arr = document.querySelectorAll('.input-filed');
+var total = 0;
+for(var i = 1; i < arr.length; i++ ) {
+  if (parseInt(arr[i].value)) {
+    total += parseInt(arr[i].value);
+  }
+}
+document.getElementById('total').value = total;
+}
+/* function 2 ends*/
+
+/* Increment & decrement end */
 
 
 
@@ -110,111 +213,12 @@ document.getElementById('demo').innerHTML = hello;
 
 /* Total value to checkout page */
 
-/* Increment & decrement */
 
-var incrementButton = document.getElementsByClassName('inc');
-var decrementButton = document.getElementsByClassName('dec');
 
-for(var i = 0; i < incrementButton.length; i++){
-var button = incrementButton[i];
-button.addEventListener('click',function(event){
-  var buttonClicked = event.target;
-  var input = buttonClicked.parentElement.children[2];
-  var inputValue = input.value;
-  var newValue = parseInt(inputValue) + 5;
-   if (newValue <= 100) {
-      input.value = newValue;
-    }
-   else {
-     alert('Qty cannot be more than 100%');
-   } 
-  
-  getTotal();
-})
+window.onload = function() {
+  var getInput = prompt("Hey type something here: ");
+  localStorage.setItem("storageName",getInput);
 }
-
-for(var i = 0; i < decrementButton.length; i++){
-var button = decrementButton[i];
-  button.addEventListener('click',function(event){
-  var buttonClicked = event.target;
-  var input = buttonClicked.parentElement.children[2];
-  var inputValue = input.value;
-  var newValue = parseInt(inputValue) - 5;
-    if (newValue >= 70) {
-      input.value = newValue;
-    }
-   else {
-     alert('Qty cannot be less than 70%');
-   } 
-     getTotal();
-})
-}
-
-function getTotal() {
-var arr = document.querySelectorAll('.input-filed');
-var total = 0;
-for(var i = 0; i < arr.length; i++ ) {
-  if (parseInt(arr[i].value)) {
-    total += parseInt(arr[i].value);
-  }
-}
-document.getElementById('total').value = total;
-}
-
-/* function 2 */
-
-var incrementButton = document.getElementsByClassName('inc1');
-var decrementButton = document.getElementsByClassName('dec1');
-
-for(var i = 0; i < incrementButton.length; i++){
-var button = incrementButton[i];
-button.addEventListener('click',function(event){
-  var buttonClicked = event.target;
-  var input = buttonClicked.parentElement.children[2];
-  var inputValue = input.value;
-  var newValue = parseInt(inputValue) + 5;
-   if (newValue <= 40) {
-      input.value = newValue;
-    }
-   else {
-     alert('Qty cannot be more than 40%');
-   } 
-  
-  getTotal();
-})
-}
-
-for(var i = 0; i < decrementButton.length; i++){
-var button = decrementButton[i];
-  button.addEventListener('click',function(event){
-  var buttonClicked = event.target;
-  var input = buttonClicked.parentElement.children[2];
-  var inputValue = input.value;
-  var newValue = parseInt(inputValue) - 5;
-    if (newValue >= 5) {
-      input.value = newValue;
-    }
-   else {
-     alert('Qty cannot be less than 0%');
-   } 
-     getTotal();
-})
-}
-
-function getTotal() {
-var arr = document.querySelectorAll('.input-filed');
-var total = 0;
-for(var i = 0; i < arr.length; i++ ) {
-  if (parseInt(arr[i].value)) {
-    total += parseInt(arr[i].value);
-  }
-}
-document.getElementById('total').value = total;
-}
-/* function 2 ends*/
-
-/* Increment & decrement end */
-
 
 
 

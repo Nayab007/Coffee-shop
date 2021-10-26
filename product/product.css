@@ -640,9 +640,10 @@ header .navigation .navigation-items a:hover:before {
 
 /* Coffee & Mushroom Animation  End*/
 .bg {
+ 
   background-image: url('../images/moss\ background.jpg');
-  height: 100vh;
-  width: 100vw;
+  height: 524px;
+  width: 0px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;

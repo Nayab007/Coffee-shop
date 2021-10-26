@@ -27,28 +27,29 @@
        </div>
    </div>
 </header>
-
+<section>
  <div class="bg"></div>  
 <div class="coffeemug1">
   <img src="./images/coffeemug12.png" alt="coffeemug"  layout="responsive" width="225px"    height="500px" >
+  
   </div> 
       <div class="h2">
-         <span id="result" ></span>
+         <span id="result"></span>
      </div>
-
-
-     <form action="checkout/checkout.html" method="POST">
+       <form action="checkout/checkout.html" method="POST">
       <div class="loader"></div>
         <div class="onClickTextOverImage"
         style="background-image:url(./images/cordycepsmilitaris.png)">
      
      <div><h3>Cordyceps</h3> often used by athletes to improve stamina, endurance, and and overall performance by its promotion of blood flow. Also has anti-inflammatory and even libido-boosting properties. <a target="_blank"  onclick="stopPropagation(event)"></a></div>
    </div>
+
    <div class="Cordyceps">
     <label for="name">Cordyceps</label>
     <div class="dec1 button">-</div>
-    <input type="text" name="qty" id="1" value="0" class="input-filed"><span id ="result" class="percent-sign">%</span>
+    <input type="text" name="qty" id="1" value="0"  class="input-filed"><span  class="percent-sign">%</span>
     <div class="inc1 button">+</div>
+    
   </div>
        
       <div class="loader1"></div>
@@ -88,14 +89,15 @@
     <input type="text" name="qty" id="4" value="70"  class="input-filed" ><a class="percent-sign">%</a>
     <div class="inc button">+</div>
   </div>
-        
+  
   
      <div class="boxtotal">
-      <label  >TOTAL  </label>
-      <input class="inputtotal" type="text" id="total" value="0" disabled=""><span class="percent-sign">% <input href="./checkout/checkout.html" type="submit" onclick="handleSubmit()"/></span>
+      <label  >TOTAL </label>
+      <input type="text" id="total" value="0" ><span class="percent-sign">% <input href="./checkout/checkout.html" type="submit" onclick="handleSubmit()"/></span>
       
     </div>
   </form>
+
         <script>
  
 /* Coffee & Mushroom Animation function End */
