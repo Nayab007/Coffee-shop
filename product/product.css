@@ -650,6 +650,7 @@ header .navigation .navigation-items a:hover:before {
 }
 
 .boxtotal {
+  position:relative;
   color: #000000;
   width: 30vw;
   display: flex;
@@ -658,7 +659,7 @@ header .navigation .navigation-items a:hover:before {
   padding: 5px;
   
   margin-left: 28vw;
-  margin-top: 22vw;
+  bottom: -35rem;
   border-radius: 20px;
   border: 1px solid #94e774;
   font-family: 'Geosans Light';
