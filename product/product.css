@@ -14,7 +14,7 @@
 
 body {
   background-image: url('../images/moss\ background.jpg');
-
+  margin-bottom: 160px;
   background-size: cover;
   background-position: center;
   font-family: 'Glamore Regular', sans-serif;
@@ -597,7 +597,7 @@ header .navigation .navigation-items a:hover:before {
   justify-content: center;
   padding: 1px;
   margin-left: 16vw;
-  margin-top: -34vw;
+  margin-top: -35vw;
   border-radius: 30px;
   border: 1px solid #94e774;
   font-family: 'Geosans Light';
@@ -636,17 +636,18 @@ header .navigation .navigation-items a:hover:before {
   font-size: 14px;
   margin: 0 10px;
 }
-/* Coffee */
+
 
 /* Coffee & Mushroom Animation  End*/
 .bg {
  
   background-image: url('../images/moss\ background.jpg');
-  height: 518px;
+  margin-bottom: 8%;
+  height: 500px;
   width: 0px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
+
+ 
+
 }
 
 .boxtotal {
@@ -659,7 +660,7 @@ header .navigation .navigation-items a:hover:before {
   padding: 5px;
   
   margin-left: 28vw;
-  bottom: -35rem;
+  bottom: -32rem;
   border-radius: 20px;
   border: 1px solid #94e774;
   font-family: 'Geosans Light';
