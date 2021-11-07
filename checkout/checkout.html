@@ -43,35 +43,39 @@
 
                 <div class="row">
                   <div class="col-50">
-                    <label for="state">State</label>
-                    <input type="text" id="state" name="state" placeholder="NY">
+                    <label class="h3"for="state">County</label>
+                    <input type="text" id="county" name="county" placeholder="Durham">
                   </div>
                   <div class="col-50">
-                    <label for="zip">Zip</label>
-                    <input type="text" id="zip" name="zip" placeholder="10001">
+                    <label class="h3"for="state">Country</label>
+                    <input type="text" id="state" name="state" placeholder="UK">
+                  </div>
+                  <div class="col-50">
+                    <label class="h3" for="zip">Zip Code</label>
+                    <input class="h3" type="text" id="zip" name="zip" placeholder="10001">
                   </div>
                 </div>
               </div>
            
               <div class="col-50">
-                <h3>Payment</h3>
-                <label for="fname">Accepted Cards</label>
+                <h3 class="h3">Payment</h3>
+                <label class="h3" for="fname">Accepted Cards</label>
                 <div class="icon-container">
                   <i class="fa fa-cc-visa" style="color:rgb(255, 255, 255);"></i>
                   <i class="fa fa-cc-amex" style="color:rgb(0, 255, 21);"></i>
                   <i class="fa fa-cc-mastercard" style="color:rgb(255, 255, 255);"></i>
                   <i class="fa fa-cc-discover" style="color:rgb(255, 255, 255);"></i>
                 </div>
-                <label for="cname">Name on Card</label>
-                <input type="text" id="cname" name="cardname" placeholder="John More Doe">
-                <label for="ccnum">Credit card number</label>
-                <input type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
-                <label for="expmonth">Exp Month</label>
-                <input type="text" id="expmonth" name="expmonth" placeholder="September">
+                <label class="h3" for="cname">Name on Card</label>
+                <input class="h3" type="text" id="cname" name="cardname" placeholder="John More Doe">
+                <label class="h3" for="ccnum">Credit card number</label>
+                <input class="h3" type="text" id="ccnum" name="cardnumber" placeholder="1111-2222-3333-4444">
+                <label class="h3" for="expmonth">Exp Month</label>
+                <input class="h3" type="text" id="expmonth" name="expmonth" placeholder="September">
                 <div class="row">
                   <div class="col-50">
-                    <label for="expyear">Exp Year</label>
-                    <input type="text" id="expyear" name="expyear" placeholder="2018">
+                    <label class="h3" for="expyear">Exp Year</label>
+                    <input type="text" id="expyear" name="expyear" placeholder="2023">
                   </div>
                   <div class="col-50">
                     <label for="cvv">CVV</label>
@@ -81,12 +85,12 @@
               </div>
               
             </div>
-            <label>
+            <label class="h3">
               <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
             </label>
-            <input type="submit" value="Continue to checkout" class="btn">
+            <input type="submit" value="Checkout with Stripe" class="btn">
         
-          </form>
+          </input>
       
         </div>
       
