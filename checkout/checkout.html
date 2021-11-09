@@ -4,24 +4,46 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <a href="https://stripe.com/en-se"></a>
     <Link rel="stylesheet" href="/checkout/checkout.css">
     <title>Checkout Page</title>
 </head>
 <body>
+  <header>
+    <a href="../index.html" >
+      <img class="brand" src="../images/ZENERGY.png" alt="coffeemug"  layout="responsive"  ></a>
+    <div class="menu-btn"></div>
+    <div class="navigation">
+        <div class="navigation-items">
+             <a href="../Pages/about.html">About Us</a>
+            <a href="../Pages/contact.html">Contact</a>
+        </div>
+        </div>
+</header>
   
 
 
-    <h2 class="h2">Checkout</h2>
+    <h2 class="checkout">Checkout</h2>
    
-  <h2>
-      Coffee: <span id="result-name" >
-  </h2>
-  <h2>
-    Cordyceps: <span id="result-surname" >
-  </h2>
-  <h2>Lion's mane : <span id="result-firstname">
-  </h2>
-  <h2>Chaga: <span id="result-middlename" ></h2>
+  
+  
+    <div class="col-25">
+      <div class="container">
+        <h4 class="h3">Cart Items <span class="price" style="color:#ffffff" ><i class="fa fa-shopping-cart"></i> <b>4</b></span></h4>
+        <p><h2 class="h2">Coffee: <span id="result-name" ></span><span class="price">£15</span></span>
+        
+        
+        </p>
+        <p><h2 class="h2">Cordyceps: <span id="result-surname" ></span></h2><span class="price1">£5</span></p>
+        <p><h2>Lion's mane : <span id="result-firstname">
+        </h2> <span class="price1">£8</span></p>
+        <p><h2>Chaga: <span id="result-middlename" ></h2><span class="price1">£2</span></p>
+       
+        <p style="color: #ffffff; font-size: 26px; margin: 10px 20px 10px 35px;"
+        
+        >Total <span class="price" style="color:#ffffff"><b>£30</b></span></p>
+      </div>
+    </div>
 
     <div class="row">
       <div class="col-75">
@@ -78,7 +100,7 @@
                     <input type="text" id="expyear" name="expyear" placeholder="2023">
                   </div>
                   <div class="col-50">
-                    <label for="cvv">CVV</label>
+                    <label class="h3" for="cvv">CVV</label>
                     <input type="text" id="cvv" name="cvv" placeholder="352">
                   </div>
                 </div>
@@ -88,24 +110,15 @@
             <label class="h3">
               <input type="checkbox" checked="checked" name="sameadr"> Shipping address same as billing
             </label>
-            <input type="submit" value="Checkout with Stripe" class="btn">
+            
+            <a class="btn" href="https://Stripe.com">Checkout with Stripe</a>
         
           </input>
       
         </div>
       
       </div>
-      <div class="col-25">
-        <div class="container">
-          <h4>Cart <span class="price" style="color:#ffffff"><i class="fa fa-shopping-cart"></i> <b>4</b></span></h4>
-          <p><a href="#">Product 1</a> <span class="price">$15</span></p>
-          <p><a href="#">Product 2</a> <span class="price">$5</span></p>
-          <p><a href="#">Product 3</a> <span class="price">$8</span></p>
-          <p><a href="#">Product 4</a> <span class="price">$2</span></p>
-          <hr>
-          <p>Total <span class="price" style="color:#ffffff"><b>$30</b></span></p>
-        </div>
-      </div>
+    
     </div>
     
 </body>
