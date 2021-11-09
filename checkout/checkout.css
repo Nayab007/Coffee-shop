@@ -2,13 +2,13 @@
     font-family: 'Glamore Regular';
     font-style: normal;
     font-weight: normal;
-    src: local('Glamore Regular'), url("./images/Glamore-lgE7w.woff") format('woff');
+    src: local('Glamore Regular'), url("../images/Glamore-lgE7w.woff") format('woff');
   }
   * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: 'Glamore Regular', sans-serif;
+    
   }
   @font-face {
     font-family: 'Geosans Light';
@@ -20,15 +20,17 @@
 
   body {
     background-image: url('../images/moss\ background.jpg');
-  
+  font-family: Geosans Light;
     background-size: cover;
     background-position: center;
-    font-family: 'Glamore Regular', sans-serif;
+    
   }
 
   header {
     z-index: 999;
-    position: absolute;
+    position: relative;
+    font-family: Glamore Regular;
+    font-size: 20px;
     top: 10px;
     left: 0;
     width: 100%;
