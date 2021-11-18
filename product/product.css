@@ -47,7 +47,7 @@ header .gradient-text {
 header .navigation .navigation-items a {
   position: relative;
 
-  color: #ffffff;
+  color: #111111;
   font-size: 1em;
   font-weight: 500;
   text-decoration: none;
@@ -59,7 +59,7 @@ header .navigation .navigation-items a {
 header .navigation .navigation-items a:before {
   content: '';
   position: absolute;
-  background: #fff;
+  background: rgb(12, 12, 12);
   width: 0;
   height: 3px;
   bottom: 0;
@@ -75,7 +75,7 @@ header .navigation .navigation-items a:hover:before {
   position: absolute;
   background-position: center;
   width: 15vw;
-  top: 14vh;
+  top: 10vh;
   margin-left: 38%;
 }
 .h2 {
@@ -660,7 +660,7 @@ header .navigation .navigation-items a:hover:before {
   padding: 5px;
   
   margin-left: 28vw;
-  bottom: -32rem;
+  bottom: -22rem;
   border-radius: 20px;
   border: 1px solid #94e774;
   font-family: 'Geosans Light';
@@ -673,7 +673,7 @@ header .navigation .navigation-items a:hover:before {
 .percent-sign {
   font-weight: bold;
   top: 1px;
-  margin-right: 8px;
+  margin-right: 9px;
   color: #000000;
   position: relative;
   z-index: 2;
