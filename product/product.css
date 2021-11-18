@@ -95,7 +95,7 @@ header .navigation .navigation-items a:hover:before {
 .onClickTextOverImage {
   width: 70px;
   height: 120px;
-  top: -70vh;
+  top: -51vh;
   left: 20vw;
   background-size: cover;
   display: inline-block;
@@ -110,9 +110,9 @@ header .navigation .navigation-items a:hover:before {
   position: absolute;
 
   width: 10vw;
-  height: 15vh;
+  height: 25vh;
   color: #fff;
-  padding: 20px;
+  padding: 30px;
   top: 0;
   bottom: 0;
   right: 0;
@@ -131,17 +131,17 @@ header .navigation .navigation-items a:hover:before {
   opacity: 1;
   padding-top: 1vh;
   visibility: visible;
-  font-size: 0.6rem;
+  font-size: 0.8rem;
 }
 
 .loader {
   position: relative;
   width: 110px;
   height: 110px;
-  top: -54vh;
+  top: -34vh;
   margin-left: 19vw;
   border-radius: 50%;
-  background: linear-gradient(45deg, transparent, transparent 30%, #e8e9ee);
+  background: linear-gradient(45deg, transparent, transparent 30%, #48cf43);
   animation: animate 2s linear infinite;
 }
 @keyframes animate {
@@ -186,8 +186,8 @@ header .navigation .navigation-items a:hover:before {
   align-items: center;
   justify-content: center;
   padding: 1px;
-  margin-left: 18vw;
-  margin-top: -35vw;
+  margin-left: 17vw;
+  margin-top: -47vh;
   border-radius: 30px;
   border: 1px solid #94e774;
   font-family: 'Geosans Light';
@@ -222,7 +222,7 @@ header .navigation .navigation-items a:hover:before {
   padding: 5px 10px ;
   font-family: 'Geosans Light';
   
-  border: 1px solid #c6c6c6;
+  border: 1px solid #afabab;
   border-radius: 5px;
   font-size: 14px;
   margin: 0 10px;
@@ -277,7 +277,7 @@ header .navigation .navigation-items a:hover:before {
   top: -48vh;
   margin-left: 65vw;
   border-radius: 50%;
-  background: linear-gradient(45deg, transparent, transparent 30%, #e8e9ee);
+  background: linear-gradient(45deg, transparent, transparent 30%, #1d39c7);
   animation: animate 2s linear infinite;
 }
 @keyframes animate {
@@ -444,7 +444,7 @@ header .navigation .navigation-items a:hover:before {
   left: 0px;
   right: 0px;
   bottom: 0px;
-  background: linear-gradient(45deg, transparent, transparent 30%, #e8e9ee);
+  background: linear-gradient(45deg, transparent, transparent 30%, #1c20df);
   border-radius: 50%;
   z-index: 1000;
   z-index: 1;
@@ -551,7 +551,7 @@ header .navigation .navigation-items a:hover:before {
   top: -56vh;
   margin-left: 19vw;
   border-radius: 50%;
-  background: linear-gradient(45deg, transparent, transparent 30%, #e8e9ee);
+  background: linear-gradient(45deg, transparent, transparent 30%, #aa36b4);
   animation: animate 2s linear infinite;
 }
 @keyframes animate {
