@@ -13,7 +13,7 @@
 }
 
 body {
-  background-image: url('../images/moss\ background.jpg');
+  background-color: #fcecd7;
   margin-bottom: 160px;
   background-size: cover;
   background-position: center;
@@ -34,7 +34,7 @@ header {
 }
 
 header .gradient-text {
-  color: #fff;
+  color: #41512a;
 
   margin-top: 3vh;
   margin-left: 30vw;
