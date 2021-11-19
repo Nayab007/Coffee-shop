@@ -413,7 +413,7 @@ header .navigation .navigation-items a:hover:before {
   top: 4vh;
   margin-left: 61vw;
   border-radius: 50%;
-  background: linear-gradient(45deg, transparent, transparent 30%, #e8e9ee);
+  background: linear-gradient(45deg, transparent, transparent 40%, #cc430d);
   animation: animate 2s linear infinite;
 }
 @keyframes animate {
@@ -444,7 +444,7 @@ header .navigation .navigation-items a:hover:before {
   left: 0px;
   right: 0px;
   bottom: 0px;
-  background: linear-gradient(45deg, transparent, transparent 30%, #020a31);
+  background: linear-gradient(45deg, transparent, transparent 30%, #e3e4e9);
   border-radius: 50%;
   z-index: 1000;
   z-index: 1;
