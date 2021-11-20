@@ -42,7 +42,7 @@
   }
   
   header .brand {
-    color: #fffce4;
+    color: #ece8c3;
     
     text-transform: uppercase;
     text-decoration: none;
@@ -69,7 +69,7 @@
   header .navigation .navigation-items a:before {
     content: '';
     position: absolute;
-    background: #fffce4;
+    background: #0f0f0f;
     width: 0;
     height: 3px;
     bottom: 0;
@@ -83,7 +83,7 @@
 
   h2 {
      font-size: 24px;
-     color: #ffffff;
+     color: #131212;
      margin-left: 50px;
      margin-top: 40px;
      line-height: 100%;
@@ -133,7 +133,7 @@
   .container {
     background-color: #0e0d0d6e;
     padding: 5px 20px 15px 20px;
-    border: 1px solid lightgrey;
+    border: 1px solid rgb(58, 57, 57);
     border-radius: 3px;
     width: 70%;
     align-items: center;
