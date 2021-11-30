@@ -69,7 +69,7 @@
   header .navigation .navigation-items a:before {
     content: '';
     position: absolute;
-    background: #8fb698;
+    background: #8ec09a;
     width: 0;
     height: 3px;
     bottom: 0;
